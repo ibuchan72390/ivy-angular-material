@@ -2,11 +2,13 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>Ivy.JS.MaterialHelpers</Name>
+    <Name>Ivy.Angular.MaterialHelpers</Name>
     <RootNamespace>Ivy.JS.Material</RootNamespace>
     <EnableTypeScript>true</EnableTypeScript>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <ToolsVersionPromptShown>0.0</ToolsVersionPromptShown>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -15,7 +17,8 @@
     <ProjectGuid>ac9974ca-e50d-4550-bad0-d4accfaf73bc</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -32,7 +35,6 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json">
@@ -43,6 +45,9 @@
     <Folder Include="WidthHelper\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="ivy-angular-material-helpers.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="WidthHelper\materials-width-helper.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>

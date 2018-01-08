@@ -6,10 +6,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "lib": [ "es6", "dom" ]
   },
   "files": [
-    "ng2-translate.ts"
+    "ivy-angular-material-helpers.ts"
   ],
   "exclude": [
     "node_modules"

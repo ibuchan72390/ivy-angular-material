@@ -259,3 +259,16 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Node generated files
+src/**/node_modules
+src/**/npm-debug.log
+
+# OS generated files
+src/**/Thumbs.db
+src/**/.DS_Store
+
+# Ignored files
+src/**/*.js
+src/**/*.map
+src/**/*.d.ts

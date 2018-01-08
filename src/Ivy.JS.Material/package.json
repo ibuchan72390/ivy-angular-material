@@ -1,0 +1,16 @@
+{
+  "name": "ivy.js.material-helpers",
+  "version": "1.0.0",
+  "description": "Ivy Material Helpers for @angular/material",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "prepublish": "tsc"
+  },
+  "author": "ibuchan@iamglobaleducation.com",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^5.1.3"
+  },
+  "devDependencies": {}
+}

@@ -15,11 +15,11 @@ let providers: any[] = [
 @NgModule({
     providers: providers
 })
-export class IvyMaterialHelpersModule {
+export class IvyMaterialModule {
 
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: IvyMaterialHelpersModule,
+            ngModule: IvyMaterialModule,
             providers: providers
         };
     }

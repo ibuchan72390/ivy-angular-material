@@ -1,12 +1,12 @@
 {
-  "name": "ivy.material-helpers",
+  "name": "ivy/material",
   "version": "1.0.4",
   "description": "Ivy Material Helpers for @angular/material",
   "scripts": {
     "test": "test",
     "prepublish": "tsc",
     "test-publish": "concurrently \"tsc\" \"npm link\"",
-    "publish": "concurrently \"tsc\" \"npm publish\""
+    "real-publish": "concurrently \"tsc\" \"npm publish\""
   },
   "author": "ibuchan@iamglobaleducation.com",
   "license": "ISC",

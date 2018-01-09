@@ -1,12 +1,12 @@
 {
-  "name": "ivy.value-helpers",
+  "name": "ivy/value-helpers",
   "version": "1.0.2",
   "description": "Ivy Value Helpers for @angular",
   "scripts": {
     "test": "test",
     "prepublish": "tsc",
     "test-publish": "concurrently \"tsc\" \"npm link\"",
-    "publish": "concurrently \"tsc\" \"npm publish\""
+    "real-publish": "concurrently \"tsc\" \"npm publish\""
   },
   "author": "ibuchan@iamglobaleducation.com",
   "license": "ISC",

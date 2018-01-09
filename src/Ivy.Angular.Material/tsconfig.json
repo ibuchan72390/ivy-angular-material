@@ -10,7 +10,7 @@
     "lib": [ "es6", "dom" ]
   },
   "files": [
-    "ivy-angular-material-helpers.ts"
+    "index.ts"
   ],
   "exclude": [
     "node_modules"

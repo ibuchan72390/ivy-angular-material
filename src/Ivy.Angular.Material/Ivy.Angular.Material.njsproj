@@ -2,7 +2,7 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>Ivy.Angular.MaterialHelpers</Name>
+    <Name>Ivy.Angular.Material</Name>
     <RootNamespace>Ivy.JS.Material</RootNamespace>
     <EnableTypeScript>true</EnableTypeScript>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
@@ -45,7 +45,10 @@
     <Folder Include="WidthHelper\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="ivy-angular-material-helpers.ts">
+    <TypeScriptCompile Include="index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ivy.material-helpers.module.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="WidthHelper\materials-width-helper.service.ts">

@@ -24,6 +24,3 @@ export class IvyMaterialHelpersModule {
         };
     }
 }
-
-// Need to export our specific classes as well
-export * from './WidthHelper/materials-width-helper.service';

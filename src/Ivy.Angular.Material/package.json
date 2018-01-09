@@ -1,8 +1,7 @@
 {
   "name": "ivy.material-helpers",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Ivy Material Helpers for @angular/material",
-  "main": "app.js",
   "scripts": {
     "test": "test",
     "prepublish": "tsc",
@@ -19,5 +18,9 @@
   "devDependencies": {
     "concurrently": "^3.5.1"
   },
-  "typings": "./ivy-angular-material-helpers.d.ts"
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  }
 }

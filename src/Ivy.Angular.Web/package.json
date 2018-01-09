@@ -1,6 +1,6 @@
 {
-  "name": "ivy/web",
-  "version": "1.0.0",
+  "name": "ivy.angular.web",
+  "version": "1.0.1",
   "description": "Ivy Web Helpers for @angular",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -11,7 +11,7 @@
   "scripts": {
     "prepublish": "tsc",
     "test-publish": "concurrently \"tsc\" \"npm link\"",
-    "real-publish": "concurrently \"tsc\" \"npm publish\""
+    "real-publish": "concurrently \"tsc\" \"yarn publish\""
   },
   "license": "ISC",
   "dependencies": {

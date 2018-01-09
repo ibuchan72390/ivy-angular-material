@@ -1,0 +1,26 @@
+{
+  "name": "ivy/web",
+  "version": "1.0.0",
+  "description": "Ivy Web Helpers for @angular",
+  "author": "ibuchan@iamglobaleducation.com",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "scripts": {
+    "prepublish": "tsc",
+    "test-publish": "concurrently \"tsc\" \"npm link\"",
+    "real-publish": "concurrently \"tsc\" \"npm publish\""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^5.1.3",
+    "ng2-device-detector": "^1.0.0",
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.19"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}

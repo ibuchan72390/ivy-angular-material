@@ -1,0 +1,19 @@
+{
+  "name": "ivy.angular.paypal",
+  "version": "1.0.1",
+  "description": "Ivy.Angular.PayPal",
+  "main": "app.js",
+  "author": {
+    "name": "ibuch"
+  },
+  "scripts": {
+    "prepublish": "tsc",
+    "test-publish": "concurrently \"tsc\" \"npm link\"",
+    "real-publish": "concurrently \"tsc\" \"npm publish\""
+  },
+  "dependencies": {
+    "@angular/core": "^5.2.5",
+    "concurrently": "^3.5.1",
+    "rxjs": "^5.5.6"
+  }
+}

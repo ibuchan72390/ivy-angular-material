@@ -3,6 +3,9 @@
 // Angular
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
+// Ng2DeviceDetector
+import { Ng2DeviceDetectorModule } from 'ng2-device-detector';
+
 import { OsDetectionService } from './Detection/os-detection.service';
 import { BrowserDetectionService } from './Detection/browser-detection.service';
 import { WindowRefService } from './Reference/window-ref.service';
@@ -16,7 +19,12 @@ let providers: any[] = [
 
 // NgModule
 @NgModule({
-    providers: providers
+
+    providers: providers,
+
+    imports: [
+        Ng2DeviceDetectorModule.forRoot()
+    ]
 })
 export class IvyWebModule {
 

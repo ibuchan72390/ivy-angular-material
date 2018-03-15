@@ -2,4 +2,4 @@
 export { IvyValueHelpersModule } from './ivy.value-helpers.module';
 
 // Specific Exports
-export { StringHelper } from './StringHelper/string-helper.service';
+export { StringHelper } from './src/StringHelper/string-helper.service';

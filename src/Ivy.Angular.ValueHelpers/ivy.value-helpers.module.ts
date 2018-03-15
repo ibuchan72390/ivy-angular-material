@@ -4,7 +4,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
 // Ivy Material Helpers
-import { StringHelper } from './StringHelper/string-helper.service';
+import { StringHelper } from './src/StringHelper/string-helper.service';
 
 // Service Collection
 let providers: any[] = [

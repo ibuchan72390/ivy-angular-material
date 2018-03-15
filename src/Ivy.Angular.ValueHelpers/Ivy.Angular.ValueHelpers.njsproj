@@ -36,17 +36,28 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="tsconfig.test.json" />
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="StringHelper\" />
+    <Folder Include="src\MathHelper\" />
+    <Folder Include="test\" />
+    <Folder Include="src\" />
+    <Folder Include="src\StringHelper\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="index.ts" />
     <TypeScriptCompile Include="ivy.value-helpers.module.ts" />
-    <TypeScriptCompile Include="StringHelper\string-helper.service.ts">
+    <TypeScriptCompile Include="src\MathHelper\math-helper.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="test\string-helper.service.spec.ts" />
+    <TypeScriptCompile Include="src\StringHelper\string-helper.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="karma.conf.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

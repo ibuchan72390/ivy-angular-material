@@ -272,3 +272,4 @@ src/**/.DS_Store
 src/**/*.js
 src/**/*.map
 src/**/*.d.ts
+/src/Ivy.Angular.ValueHelpers/coverage

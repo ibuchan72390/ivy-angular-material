@@ -1,14 +1,12 @@
 ﻿import { Injectable, HostListener } from '@angular/core';
 
+import { WindowRefService } from 'ivy.angular.web';
+
 @Injectable()   
 export class MaterialsWidthHelper {
 
-    private windowWidth: number;
-
-    constructor() {
-
-        // Setup our default value, appears this is undefined to start
-        this.windowWidth = window.innerWidth;
+    constructor(
+        private windowRef: WindowRefService) {
 
         // Doesn't appear we can use HostListener in a service correctly
         // http://stackoverflow.com/questions/39592972/is-it-possible-to-use-hostlistener-in-a-service
@@ -32,22 +30,33 @@ export class MaterialsWidthHelper {
     }
 
     isSm(): boolean {
-        return this.isWindowUnderWidth(960);
+        return this.isWindowBetween(480, 960);
     }
 
     isMd(): boolean {
-        return this.isWindowUnderWidth(1280);
+        return this.isWindowBetween(960, 1280);
     }
 
     isLg(): boolean {
-        return this.isWindowUnderWidth(1920);
+        return this.isWindowBetween(1280, 1920);
     }
 
     isXl(): boolean {
-        return window.innerWidth > 1920;
+        return this.isWindowOverWidth(1920);
     }
 
     private isWindowUnderWidth(width: number): boolean {
-        return window.innerWidth <= width;
+        return this.windowRef.nativeWindow.innerWidth <= width;
     }
+
+    private isWindowOverWidth(width: number): boolean {
+        return this.windowRef.nativeWindow.innerWidth > width;
+    }
+
+    private isWindowBetween(lowWidth: number, highWidth: number): boolean {
+        return this.isWindowUnderWidth(highWidth) &&
+               this.isWindowOverWidth(lowWidth);
+    }
+
+
 }

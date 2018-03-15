@@ -1,8 +1,9 @@
 ﻿import { Component, Input, AfterViewInit } from '@angular/core';
 
+import { PayPalHelperService } from '../Services/paypal-helper.service';
+
 import { PayPalCheckoutConfig } from '../Models/paypal-checkout-config.model';
 
-declare const paypal: any;
 
 @Component({
     selector: 'ivy-paypal-checkout',
@@ -13,10 +14,13 @@ export class PayPalCheckoutComponent implements AfterViewInit {
     @Input()
     config: PayPalCheckoutConfig;
 
+    constructor(
+        private paypalSvc: PayPalHelperService) {
+    }
 
     ngAfterViewInit(): void {
 
-        if (!paypal) {
+        if (!this.paypalSvc.init()) {
             throw new Error('paypal is undefined! Make sure you\'ve ' +
                 'included the checkout.js script tag in your header!');
         }
@@ -25,9 +29,7 @@ export class PayPalCheckoutComponent implements AfterViewInit {
             throw new Error('PayPalCheckoutConfig is required for paypal checkout component!');
         }
 
-        setTimeout(() => {
-            paypal.Button.render(this.config, '#paypal-button-container');
-        });
+        this.paypalSvc.createButton(this.config, '#paypal-button-container');
     }
 }
 

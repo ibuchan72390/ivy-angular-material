@@ -273,3 +273,6 @@ src/**/*.js
 src/**/*.map
 src/**/*.d.ts
 /src/Ivy.Angular.ValueHelpers/coverage
+/src/Ivy.Angular.PayPal/coverage
+/src/Ivy.Angular.Web/coverage
+/src/Ivy.Angular.Material/coverage

@@ -5,10 +5,13 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 
 // Ivy Material Helpers
 import { StringHelper } from './src/StringHelper/string-helper.service';
+import { MathHelper } from './src/MathHelper/math-helper.service';
+
 
 // Service Collection
 let providers: any[] = [
-    StringHelper
+    StringHelper,
+    MathHelper
 ];
 
 // NgModule

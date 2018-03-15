@@ -1,7 +1,14 @@
 ﻿import { Injectable } from '@angular/core';
 
+import { MathHelper } from '../MathHelper/math-helper.service';
+
 @Injectable()
 export class StringHelper {
+
+    constructor(
+        private math: MathHelper) {
+
+    }
 
     isNullOrEmpty(data: string): boolean {
         return data == null || data == '';
@@ -12,7 +19,7 @@ export class StringHelper {
         var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
         for (var i = 0; i < 10; i++)
-            text += possible.charAt(Math.floor(Math.random() * possible.length));
+            text += possible.charAt(this.math.floor(this.math.random() * possible.length));
 
         return text;
     }

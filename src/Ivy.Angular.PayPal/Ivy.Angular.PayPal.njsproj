@@ -37,13 +37,17 @@
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json" />
+    <Content Include="tsconfig.test.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Components\" />
+    <Folder Include="test\" />
+    <Folder Include="src\Models\" />
+    <Folder Include="src\Components\" />
+    <Folder Include="src\" />
+    <Folder Include="src\Services\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Components\paypal-checkout.component.ts">
+    <TypeScriptCompile Include="src\Components\paypal-checkout.component.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="index.ts">
@@ -52,13 +56,22 @@
     <TypeScriptCompile Include="ivy.paypal.module.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="Models\paypal-amount.model.ts" />
-    <TypeScriptCompile Include="Models\paypal-checkout-client-ids.model.ts" />
-    <TypeScriptCompile Include="Models\paypal-checkout-config.model.ts" />
-    <TypeScriptCompile Include="Models\paypal-item-list.model.ts" />
-    <TypeScriptCompile Include="Models\paypal-item.model.ts" />
-    <TypeScriptCompile Include="Models\paypal-purchase-result.model.ts" />
-    <TypeScriptCompile Include="Models\paypal-transaction.model.ts" />
+    <TypeScriptCompile Include="src\Models\paypal-amount.model.ts" />
+    <TypeScriptCompile Include="src\Models\paypal-checkout-client-ids.model.ts" />
+    <TypeScriptCompile Include="src\Models\paypal-checkout-config.model.ts" />
+    <TypeScriptCompile Include="src\Models\paypal-item-list.model.ts" />
+    <TypeScriptCompile Include="src\Models\paypal-item.model.ts" />
+    <TypeScriptCompile Include="src\Models\paypal-purchase-result.model.ts" />
+    <TypeScriptCompile Include="src\Models\paypal-transaction.model.ts" />
+    <TypeScriptCompile Include="src\Services\paypal-helper.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\paypal-checkout.component.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="karma.conf.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

@@ -269,10 +269,12 @@ src/**/Thumbs.db
 src/**/.DS_Store
 
 # Ignored files
-**/src/**/*.js
-**/src/**/*.js.map
-**/src/**/*.d.ts
-/src/Ivy.Angular.ValueHelpers/coverage
-/src/Ivy.Angular.PayPal/coverage
-/src/Ivy.Angular.Web/coverage
-/src/Ivy.Angular.Material/coverage
+/**/coverage
+/**/index.js.map
+/**/index.js
+/**/**/*.js.map
+/**/**/*.js
+/**/**/*.d.ts
+/**/**/**/*.js.map
+/**/**/**/*.js
+/**/**/**/*.d.ts

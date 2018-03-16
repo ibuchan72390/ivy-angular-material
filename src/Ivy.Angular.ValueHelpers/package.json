@@ -2,15 +2,22 @@
   "name": "ivy.angular.value-helpers",
   "version": "1.0.3",
   "description": "Ivy Value Helpers for @angular",
+  "author": "ibuchan@iamglobaleducation.com",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "license": "ISC",
   "scripts": {
     "test": "karma start ./karma.conf.js --single-run",
     "test-debug": "karma start ./karma.conf.js",
     "prepublish": "tsc",
     "test-publish": "concurrently \"tsc\" \"npm link\""
   },
-  "author": "ibuchan@iamglobaleducation.com",
-  "license": "ISC",
   "dependencies": {
+    "@angular/core": "^5.2.9",
+    "ivy.angular.data": "^1.0.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.20"
   },
@@ -27,10 +34,5 @@
     "karma-typescript": "^3.0.12",
     "requirejs": "^2.3.5",
     "typescript": "^2.7.2"
-  },
-  "typings": "./index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ibuchan72390/ivy-angular.git"
   }
 }

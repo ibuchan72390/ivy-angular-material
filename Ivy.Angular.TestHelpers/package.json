@@ -1,0 +1,17 @@
+{
+  "name": "ivy.angular.test-helpers",
+  "version": "1.0.0",
+  "description": "Shared helpers for configuring Ivy Tests.  Based on: https://angular-2-training-book.rangle.io/handout/testing/intro-to-tdd/setup/testbed-configuration.html",
+  "author": "ibuchan@iamglobaleducation.com",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "dependencies": {
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "rxjs": "^5.5.7"
+  }
+}

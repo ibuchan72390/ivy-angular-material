@@ -23,4 +23,11 @@ let providers: any[] = [
     providers: providers
 })
 export class IvyPayPalModule {
+
+    static forRoot(): ModuleWithProviders {
+        return {
+            ngModule: IvyPayPalModule,
+            providers: providers
+        };
+    }
 }

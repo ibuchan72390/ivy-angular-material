@@ -1,0 +1,15 @@
+{
+  "name": "ivy.angular.data",
+  "version": "1.0.1",
+  "description": "Data modeling representations of entity objects from Ivy C#",
+  "author": "ibuchan@iamglobaleducation.com",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "scripts": {
+    "prepublish": "tsc",
+    "test-publish": "concurrently \"tsc\" \"npm link\""
+  }
+}

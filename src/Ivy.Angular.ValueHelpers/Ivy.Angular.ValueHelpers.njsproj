@@ -40,21 +40,29 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\MathHelper\" />
+    <Folder Include="src\Services\" />
     <Folder Include="test\" />
     <Folder Include="src\" />
-    <Folder Include="src\StringHelper\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="index.ts" />
     <TypeScriptCompile Include="ivy.value-helpers.module.ts" />
-    <TypeScriptCompile Include="src\MathHelper\math-helper.service.ts">
+    <TypeScriptCompile Include="src\Services\collection-helper.service.ts" />
+    <TypeScriptCompile Include="src\Services\math-helper.service.ts" />
+    <TypeScriptCompile Include="src\Services\sort-order.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\Services\string-helper.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\collection-helper.service.spec.ts" />
+    <TypeScriptCompile Include="test\math-helper.service.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\sort-order.service.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="test\string-helper.service.spec.ts" />
-    <TypeScriptCompile Include="src\StringHelper\string-helper.service.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="karma.conf.js" />

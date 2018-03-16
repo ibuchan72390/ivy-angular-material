@@ -1,7 +1,7 @@
 ﻿import 'jasmine';
 
-import { MathHelper } from '../src/MathHelper/math-helper.service';
-import { StringHelper } from '../src/StringHelper/string-helper.service';
+import { MathHelper } from '../src/Services/math-helper.service';
+import { StringHelper } from '../src/Services/string-helper.service';
 
 describe('StringHelper', () => {
 

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{578E5A6C-786A-4042-8D40-21307EDFC9CA}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Web", "src\Ivy.Angular.Web\Ivy.Angular.Web.njsproj", "{399CAFE4-2FEE-40AE-BE3C-5DD17F4A6F4D}"
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.PayPal", "src\Ivy.Angular.PayPal\Ivy.Angular.PayPal.njsproj", "{56DACF70-E1FB-4AB3-BD94-9D87A95BDAB1}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Auth0", "src\Ivy.Angular.Auth0\Ivy.Angular.Auth0.njsproj", "{92EC26AA-8F63-48A0-8D09-A7A9C93F1DC7}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Data", "src\Ivy.Angular.Data\Ivy.Angular.Data.njsproj", "{EF57AD8E-B589-4E4E-BBBE-0541289436A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,14 @@ Global
 		{56DACF70-E1FB-4AB3-BD94-9D87A95BDAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56DACF70-E1FB-4AB3-BD94-9D87A95BDAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56DACF70-E1FB-4AB3-BD94-9D87A95BDAB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92EC26AA-8F63-48A0-8D09-A7A9C93F1DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92EC26AA-8F63-48A0-8D09-A7A9C93F1DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92EC26AA-8F63-48A0-8D09-A7A9C93F1DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92EC26AA-8F63-48A0-8D09-A7A9C93F1DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF57AD8E-B589-4E4E-BBBE-0541289436A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF57AD8E-B589-4E4E-BBBE-0541289436A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF57AD8E-B589-4E4E-BBBE-0541289436A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF57AD8E-B589-4E4E-BBBE-0541289436A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +56,8 @@ Global
 		{D7BA7429-2887-4332-9B09-AF3C8A1F64EB} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{399CAFE4-2FEE-40AE-BE3C-5DD17F4A6F4D} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{56DACF70-E1FB-4AB3-BD94-9D87A95BDAB1} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
+		{92EC26AA-8F63-48A0-8D09-A7A9C93F1DC7} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
+		{EF57AD8E-B589-4E4E-BBBE-0541289436A5} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {179B2D41-C7AA-49E0-AE4D-2F5AA4B6D9E7}

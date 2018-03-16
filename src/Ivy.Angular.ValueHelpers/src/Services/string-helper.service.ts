@@ -1,6 +1,6 @@
 ﻿import { Injectable } from '@angular/core';
 
-import { MathHelper } from '../MathHelper/math-helper.service';
+import { MathHelper } from './math-helper.service';
 
 @Injectable()
 export class StringHelper {

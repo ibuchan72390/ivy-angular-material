@@ -1,0 +1,9 @@
+{
+  "name": "ivy.angular.data",
+  "version": "1.0.0",
+  "description": "Ivy.Angular.Data",
+  "main": "app.js",
+  "author": {
+    "name": "ibuch"
+  }
+}

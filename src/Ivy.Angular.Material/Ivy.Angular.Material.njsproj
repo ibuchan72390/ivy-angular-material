@@ -43,9 +43,9 @@
     <Content Include="tsconfig.test.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="src\Services\" />
     <Folder Include="test\" />
     <Folder Include="src\" />
-    <Folder Include="src\WidthHelper\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="index.ts">
@@ -54,7 +54,7 @@
     <TypeScriptCompile Include="ivy.material-helpers.module.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\WidthHelper\materials-width-helper.service.ts">
+    <TypeScriptCompile Include="src\Services\materials-width-helper.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="test\materials-width-helper.service.spec.ts">

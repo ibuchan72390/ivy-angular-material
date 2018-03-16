@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.value-helpers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Ivy Value Helpers for @angular",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",

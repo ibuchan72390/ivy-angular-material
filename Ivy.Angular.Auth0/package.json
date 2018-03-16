@@ -1,0 +1,9 @@
+{
+  "name": "ivy.angular.auth0",
+  "version": "1.0.0",
+  "description": "Ivy.Angular.Auth0",
+  "main": "app.js",
+  "author": {
+    "name": "ibuch"
+  }
+}

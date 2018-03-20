@@ -1,0 +1,37 @@
+{
+  "name": "ivy.angular.pagination",
+  "version": "1.0.0",
+  "description": "Client side components for that leverage Ivy C# pagination without material design",
+  "author": "ibuchan@iamglobaleducation.com",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "karma start ./karma.conf.js --single-run",
+    "test-debug": "karma start ./karma.conf.js",
+    "prepublish": "tsc",
+    "test-publish": "concurrently \"tsc\" \"npm link\""
+  },
+  "dependencies": {
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "@types/jasmine": "^2.8.6",
+    "ivy.angular.data": "^1.0.2",
+    "ivy.angular.test-helpers": "^1.0.1",
+    "ivy.angular.value-helpers": "^1.0.4",
+    "jasmine": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-typescript": "^3.0.12",
+    "karma-typescript-angular2-transform": "^1.0.2",
+    "karma-typescript-es6-transform": "^1.0.4",
+    "typescript": "^2.7.2",
+    "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+  }
+}

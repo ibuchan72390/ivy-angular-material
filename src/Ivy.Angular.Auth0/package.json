@@ -7,5 +7,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "scripts": {
+    "prepublish": "tsc",
+    "test-publish": "concurrently \"tsc\" \"npm link\""
   }
 }

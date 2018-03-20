@@ -37,4 +37,16 @@ describe('MathHelper', () => {
         }
     });
 
+
+    // ceil
+    it('ceil rounds the value up', () => {
+
+        var toCeil = Array.from(new Array(9).keys()).map((val, index) => (index + 1) / 10);
+
+        var ceiled = toCeil.map(x => sut.ceil(x));
+
+        for (var i = 0; i < ceiled.length; i++) {
+            expect(ceiled[i]).toBe(1);
+        }
+    });
 });

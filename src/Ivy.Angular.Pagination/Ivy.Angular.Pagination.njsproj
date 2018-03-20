@@ -2,19 +2,14 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>Ivy.Angular.PayPal</Name>
-    <RootNamespace>Ivy.Angular.PayPal</RootNamespace>
-    <EnableTypeScript>true</EnableTypeScript>
-    <TypeScriptSourceMap>true</TypeScriptSourceMap>
-    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
-    <ToolsVersionPromptShown>2.5</ToolsVersionPromptShown>
-    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
+    <Name>Ivy.Angular.Pagination</Name>
+    <RootNamespace>Ivy.Angular.Pagination</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>56dacf70-e1fb-4ab3-bd94-9d87a95bdab1</ProjectGuid>
+    <ProjectGuid>e269e574-89b4-4eae-bf39-84afd5147560</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>
     </StartupFile>
@@ -36,39 +31,21 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\Components\ScrollingLoad\scrolling-load.component.html" />
     <Content Include="tsconfig.json" />
     <Content Include="tsconfig.test.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="test\" />
-    <Folder Include="src\Models\" />
     <Folder Include="src\Components\" />
+    <Folder Include="src\Components\ScrollingLoad\" />
+    <Folder Include="test\" />
     <Folder Include="src\" />
-    <Folder Include="src\Services\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\Components\paypal-checkout.component.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="index.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="ivy.paypal.module.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="src\Models\paypal-amount.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-checkout-client-ids.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-checkout-config.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-item-list.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-item.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-purchase-result.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-transaction.model.ts" />
-    <TypeScriptCompile Include="src\Services\paypal-helper.service.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="test\paypal-checkout.component.spec.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
+    <TypeScriptCompile Include="index.ts" />
+    <TypeScriptCompile Include="ivy.angular.pagination.module.ts" />
+    <TypeScriptCompile Include="src\Components\ScrollingLoad\scrolling-load.component.ts" />
+    <TypeScriptCompile Include="test\scrolling-load.component.spec.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="karma.conf.js" />

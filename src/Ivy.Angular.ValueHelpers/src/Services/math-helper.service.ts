@@ -10,4 +10,8 @@ export class MathHelper {
     floor(val: number): number {
         return Math.floor(val);
     }
+
+    ceil(val: number): number {
+        return Math.ceil(val);
+    }
 }

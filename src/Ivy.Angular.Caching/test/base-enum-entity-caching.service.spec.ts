@@ -1,0 +1,7 @@
+﻿import 'jasmine';
+
+describe('BaseEnumEntityCachingService', () => {
+
+
+    
+});

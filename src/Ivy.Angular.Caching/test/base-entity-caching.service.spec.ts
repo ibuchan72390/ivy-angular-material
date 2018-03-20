@@ -1,0 +1,3 @@
+﻿import 'jasmine';
+
+describe('BaseEntityCachingService', () => { });

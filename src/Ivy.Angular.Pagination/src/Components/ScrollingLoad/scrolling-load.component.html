@@ -1,0 +1,20 @@
+﻿<!--  
+
+    The idea here is that this is a fixed height div with scrolling overflow.
+    As we scroll to the bottom of the div, we'll increase the page size and emit the new paging request.
+    When the higher context receives the response, they'll simply add them to a rendering ngFor.
+    This will increase the height of the div allowing for further scrolling
+      
+-->
+
+<div [style.max-height]="getHeight()" 
+     style="overflow-y: scroll; height: 100%;"
+     class="full-width"
+     #scrollcontainer
+     (scroll)="onScroll($event)">
+
+    <div #scrollcontent>
+        <ng-content></ng-content>
+    </div>
+
+</div>

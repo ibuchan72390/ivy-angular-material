@@ -2,19 +2,18 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>Ivy.Angular.PayPal</Name>
-    <RootNamespace>Ivy.Angular.PayPal</RootNamespace>
+    <Name>Ivy.Angular.Material.Pagination</Name>
+    <RootNamespace>Ivy.Angular.Material.Pagination</RootNamespace>
     <EnableTypeScript>true</EnableTypeScript>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
-    <ToolsVersionPromptShown>2.5</ToolsVersionPromptShown>
-    <TypeScriptToolsVersion>2.6</TypeScriptToolsVersion>
+    <ToolsVersionPromptShown>0.0</ToolsVersionPromptShown>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>56dacf70-e1fb-4ab3-bd94-9d87a95bdab1</ProjectGuid>
+    <ProjectGuid>656d95c5-e66e-4864-82ab-a93c98756b48</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>
     </StartupFile>
@@ -25,7 +24,7 @@
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <StartWebBrowser>false</StartWebBrowser>
+    <StartWebBrowser>False</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,37 +35,26 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\Components\PaginatedList\paginated-list.component.css" />
+    <Content Include="src\Components\PaginatedList\paginated-list.component.html" />
     <Content Include="tsconfig.json" />
     <Content Include="tsconfig.test.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="test\" />
-    <Folder Include="src\Models\" />
     <Folder Include="src\Components\" />
+    <Folder Include="src\Components\PaginatedList\" />
+    <Folder Include="test\" />
     <Folder Include="src\" />
-    <Folder Include="src\Services\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\Components\paypal-checkout.component.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
     <TypeScriptCompile Include="index.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="ivy.paypal.module.ts">
+    <TypeScriptCompile Include="ivy.angular.material.pagination.module.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\Models\paypal-amount.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-checkout-client-ids.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-checkout-config.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-item-list.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-item.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-purchase-result.model.ts" />
-    <TypeScriptCompile Include="src\Models\paypal-transaction.model.ts" />
-    <TypeScriptCompile Include="src\Services\paypal-helper.service.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
-    <TypeScriptCompile Include="test\paypal-checkout.component.spec.ts">
+    <TypeScriptCompile Include="src\Components\PaginatedList\paginated-list.component.ts" />
+    <TypeScriptCompile Include="test\paginated-list.component.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>

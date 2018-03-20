@@ -10,13 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', '@angular/cli'],
-
-    plugins: [
-        require('karma-jasmine'),
-
-        require('@angular/cli/plugins/karma')
-    ],
+    frameworks: ['jasmine', 'karma-typescript'],
 
 
     // list of files / patterns to load in the browser
@@ -33,9 +27,6 @@ module.exports = function(config) {
          * Angular Testing File Requirements
          * https://github.com/angular/quickstart/blob/master/karma.conf.js#L42
          */
-
-        // Polyfills
-        'node_modules/core-js/client/shim.js',
 
         // zone.js
         'node_modules/zone.js/dist/zone.js',
@@ -66,15 +57,15 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'src/Components/**/*.ts': ['@angular/cli'],
-        'test/*.spec.ts': ['@angular/cli']
+        'src/Components/**/*.ts': ['karma-typescript'],
+        'test/*.spec.ts': ['karma-typescript']
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'karma-typescript'],
 
 
     // web server port
@@ -106,5 +97,16 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity,
+
+
+    karmaTypescriptConfig: {
+        tsconfig: './tsconfig.test.json',
+        bundlerOptions: {
+            transforms: [
+                require("karma-typescript-angular2-transform"),
+                require("karma-typescript-es6-transform")()
+            ]
+        }
+    }
   })
 }

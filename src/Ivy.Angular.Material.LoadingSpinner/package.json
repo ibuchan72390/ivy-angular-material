@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.loading-spinner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Custom Loading Spinner to work with Angular Material.",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -23,7 +23,6 @@
     "@angular/core": "^5.2.9",
     "@angular/flex-layout": "^5.0.0-beta.13",
     "@angular/forms": "^5.2.9",
-    "@angular/http": "^5.2.9",
     "@angular/material": "^5.2.4",
     "@angular/platform-browser": "^5.2.9",
     "@angular/platform-browser-dynamic": "^5.2.9",
@@ -34,10 +33,10 @@
     "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
   },
   "devDependencies": {
-    "jasmine-core": "^3.1.0",
     "@types/jasmine": "^2.8.6",
     "ivy.angular.test-helpers": "^1.0.1",
     "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0",
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.1.0",

@@ -1,0 +1,38 @@
+{
+  "name": "ivy.angular.material.loading-spinner",
+  "version": "0.0.0",
+  "description": "Custom Loading Spinner to work with Angular Material.",
+  "author": "ibuchan@iamglobaleducation.com",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "karma start ./karma.conf.js --single-run",
+    "test-debug": "karma start ./karma.conf.js",
+    "prepublish": "tsc",
+    "test-publish": "tsc && npm link"
+  },
+  "dependencies": {
+    "@angular/animations": "^5.2.9",
+    "@angular/cdk": "^5.2.4",
+    "@angular/common": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/flex-layout": "^5.0.0-beta.13",
+    "@angular/forms": "^5.2.9",
+    "@angular/material": "^5.2.4",
+    "@angular/platform-browser": "^5.2.9",
+    "@types/jasmine": "^2.8.6",
+    "jasmine": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-typescript": "^3.0.12",
+    "rxjs": "^5.5.7",
+    "typescript": "^2.7.2",
+    "zone.js": "^0.8.20"
+  }
+}

@@ -1,4 +1,8 @@
 ﻿import { NgModule } from '@angular/core';
+
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatProgressSpinnerModule } from '@angular/material';
@@ -14,6 +18,10 @@ let declarations: any[] = [
 // NgModule
 @NgModule({
     imports: [
+
+        //HttpModule,
+        //HttpClientModule,
+
         CommonModule,
         FlexLayoutModule,
         MatProgressSpinnerModule

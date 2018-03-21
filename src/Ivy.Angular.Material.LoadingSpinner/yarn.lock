@@ -44,12 +44,6 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/http@^5.2.9":
-  version "5.2.9"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-5.2.9.tgz#2ffea536e181bc97e2867593d57425ea7853285b"
-  dependencies:
-    tslib "^1.7.1"
-
 "@angular/material@^5.2.4":
   version "5.2.4"
   resolved "https://registry.yarnpkg.com/@angular/material/-/material-5.2.4.tgz#9e823798324283d23ea839156fac5bcb73443d55"

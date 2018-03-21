@@ -12,8 +12,8 @@
   "scripts": {
     "test": "karma start ./karma.conf.js --single-run",
     "test-debug": "karma start ./karma.conf.js",
-    "prepublish": "tsc",
-    "test-publish": "tsc && npm link"
+    "prepublish": "tsc --preserveSymlinks",
+    "test-publish": "tsc --preserveSymlinks && npm link"
   },
   "dependencies": {
     "@angular/animations": "^5.2.9",

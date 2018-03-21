@@ -4,8 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatProgressSpinnerModule } from '@angular/material';
 
-import { ComponentFixture, getTestBed, TestBed } from '@angular/core/testing';
-import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { configureWebTests } from 'ivy.angular.test-helpers';
 

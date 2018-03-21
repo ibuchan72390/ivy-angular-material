@@ -27,8 +27,6 @@
     "@angular/platform-browser": "^5.2.9",
     "@angular/platform-browser-dynamic": "^5.2.9",
     "core-js": "^2.5.3",
-    "karma-typescript-angular2-transform": "^1.0.2",
-    "karma-typescript-es6-transform": "^1.0.4",
     "rxjs": "^5.5.7",
     "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
   },
@@ -42,6 +40,8 @@
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.1",
     "karma-typescript": "^3.0.12",
+    "karma-typescript-angular2-transform": "^1.0.2",
+    "karma-typescript-es6-transform": "^1.0.4",
     "typescript": "^2.7.2"
   }
 }

@@ -9,8 +9,19 @@ import { PaginatedRequest, BasePaginatedResponse } from 'ivy.angular.data';
 
     // Fully qualified path required for karma-typescript
     templateUrl: './paginated-list.component.html',
-    styleUrls: [
-        './paginated-list.component.css'
+    styles: [
+        `
+.page-count-bar {
+    
+    height: 40px;
+    font-size: 16px;
+}
+
+.page-count-text {
+    font-size: 16px;
+}
+
+`
     ]
 })
 export class PaginatedListComponent implements OnInit {
@@ -18,7 +29,7 @@ export class PaginatedListComponent implements OnInit {
     pageCounts: number[] = [5, 10, 25, 50, 100];
 
     request: PaginatedRequest;
-    pageCountCache: number;
+    pageCountCache: number = 1;
 
     requestInit: boolean = false;
 

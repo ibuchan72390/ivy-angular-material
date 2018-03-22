@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.helpers",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Ivy Material Helpers for @angular/material",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",

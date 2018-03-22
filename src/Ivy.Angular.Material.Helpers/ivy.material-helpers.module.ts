@@ -3,9 +3,6 @@
 // Angular
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
-// Ivy Web
-import { IvyWebModule } from 'ivy.angular.web';
-
 // Ivy Material Helpers
 import { MaterialsWidthHelper } from './src/Services/materials-width-helper.service';
 
@@ -16,9 +13,6 @@ let providers: any[] = [
 
 // NgModule
 @NgModule({
-    imports: [
-        IvyWebModule
-    ],
     providers: providers
 })
 export class IvyMaterialHelpersModule {

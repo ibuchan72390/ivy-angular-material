@@ -7,7 +7,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { IvyWebModule } from 'ivy.angular.web';
 
 // Ivy Material Helpers
-import { MaterialsWidthHelper } from './WidthHelper/materials-width-helper.service';
+import { MaterialsWidthHelper } from './src/Services/materials-width-helper.service';
 
 // Service Collection
 let providers: any[] = [
@@ -21,11 +21,11 @@ let providers: any[] = [
     ],
     providers: providers
 })
-export class IvyMaterialModule {
+export class IvyMaterialHelpersModule {
 
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: IvyMaterialModule,
+            ngModule: IvyMaterialHelpersModule,
             providers: providers
         };
     }

@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{578E5A6C-786A-4042-8D40-21307EDFC9CA}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material", "src\Ivy.Angular.Material\Ivy.Angular.Material.njsproj", "{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}"
-EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.ValueHelpers", "src\Ivy.Angular.ValueHelpers\Ivy.Angular.ValueHelpers.njsproj", "{D7BA7429-2887-4332-9B09-AF3C8A1F64EB}"
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Web", "src\Ivy.Angular.Web\Ivy.Angular.Web.njsproj", "{399CAFE4-2FEE-40AE-BE3C-5DD17F4A6F4D}"
@@ -27,16 +25,14 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Pagination", "s
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.LoadingSpinner", "src\Ivy.Angular.Material.LoadingSpinner\Ivy.Angular.Material.LoadingSpinner.njsproj", "{E0843185-1332-423C-A6CB-C6B2968646C5}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.Helpers", "src\Ivy.Angular.Material.Helpers\Ivy.Angular.Material.Helpers.njsproj", "{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7BA7429-2887-4332-9B09-AF3C8A1F64EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7BA7429-2887-4332-9B09-AF3C8A1F64EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7BA7429-2887-4332-9B09-AF3C8A1F64EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,12 +73,15 @@ Global
 		{E0843185-1332-423C-A6CB-C6B2968646C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0843185-1332-423C-A6CB-C6B2968646C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0843185-1332-423C-A6CB-C6B2968646C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{D7BA7429-2887-4332-9B09-AF3C8A1F64EB} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{399CAFE4-2FEE-40AE-BE3C-5DD17F4A6F4D} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{56DACF70-E1FB-4AB3-BD94-9D87A95BDAB1} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
@@ -93,6 +92,7 @@ Global
 		{87E75B94-34A3-4832-8458-B6774EF84669} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{E269E574-89B4-4EAE-BF39-84AFD5147560} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{E0843185-1332-423C-A6CB-C6B2968646C5} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
+		{AC9974CA-E50D-4550-BAD0-D4ACCFAF73BC} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {179B2D41-C7AA-49E0-AE4D-2F5AA4B6D9E7}

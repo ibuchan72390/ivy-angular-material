@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.loading-spinner",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Custom Loading Spinner to work with Angular Material.",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",

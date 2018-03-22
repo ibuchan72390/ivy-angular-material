@@ -1,7 +1,7 @@
 ﻿import 'jasmine';
 
 import { Ng2DeviceService } from 'ng2-device-detector';
-import { OsDetectionService } from '../src/Detection/os-detection.service';
+import { OsDetectionService } from '../src/Services/os-detection.service';
 
 describe('OsDetectionService', () => {
 

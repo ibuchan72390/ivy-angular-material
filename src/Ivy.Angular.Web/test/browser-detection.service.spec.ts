@@ -1,6 +1,6 @@
 ﻿import 'jasmine';
 
-import { BrowserDetectionService } from '../src/Detection/browser-detection.service';
+import { BrowserDetectionService } from '../src/Services/browser-detection.service';
 import { Ng2DeviceService } from 'ng2-device-detector';
 
 describe('BrowserDetectionService', () => {

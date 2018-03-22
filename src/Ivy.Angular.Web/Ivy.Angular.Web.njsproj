@@ -40,16 +40,15 @@
     <Content Include="tsconfig.test.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\Detection\" />
+    <Folder Include="src\Services\" />
     <Folder Include="test\" />
     <Folder Include="src\" />
-    <Folder Include="src\Reference\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\Detection\browser-detection.service.ts">
+    <TypeScriptCompile Include="src\Services\browser-detection.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\Detection\os-detection.service.ts">
+    <TypeScriptCompile Include="src\Services\os-detection.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="index.ts">
@@ -58,7 +57,7 @@
     <TypeScriptCompile Include="ivy.web.module.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\Reference\window-ref.service.ts">
+    <TypeScriptCompile Include="src\Services\window-ref.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="test\browser-detection.service.spec.ts">

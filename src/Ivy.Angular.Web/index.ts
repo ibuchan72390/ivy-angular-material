@@ -1,9 +1,7 @@
 ﻿// Module
 export { IvyWebModule } from './ivy.web.module';
 
-// Detection
-export { BrowserDetectionService } from './Detection/browser-detection.service';
-export { OsDetectionService } from './Detection/os-detection.service';
-
-// Reference
-export { WindowRefService } from './Reference/window-ref.service';
+// Services
+export { BrowserDetectionService } from './src/Services/browser-detection.service';
+export { OsDetectionService } from './src/Services/os-detection.service';
+export { WindowRefService } from './src/Services/window-ref.service';

@@ -31,6 +31,11 @@ module.exports = function(config) {
     preprocessors: {
         'test/index.ts': ['webpack', 'sourcemap']
     },
+    
+    // Required for Firefox && Chrome
+    mime: {
+      'text/x-typescript': ['ts','tsx']
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'

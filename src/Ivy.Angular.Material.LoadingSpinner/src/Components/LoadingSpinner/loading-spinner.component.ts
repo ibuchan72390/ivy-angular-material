@@ -1,4 +1,6 @@
-﻿import { Component, Input } from '@angular/core';
+﻿declare var require: any;
+
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'ivy-loading-spinner',

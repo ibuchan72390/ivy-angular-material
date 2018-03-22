@@ -34,11 +34,11 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".npmignore" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="src\Components\LoadingSpinner\loading-spinner.component.html" />
     <Content Include="tsconfig.json" />
-    <Content Include="tsconfig.test.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\Components\" />
@@ -50,12 +50,16 @@
     <TypeScriptCompile Include="index.ts" />
     <TypeScriptCompile Include="ivy.angular.material.loading-spinner.module.ts" />
     <TypeScriptCompile Include="src\Components\LoadingSpinner\loading-spinner.component.ts" />
+    <TypeScriptCompile Include="test\index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="test\loading-spinner.component.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="karma.conf.js" />
+    <Compile Include="webpack.config.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

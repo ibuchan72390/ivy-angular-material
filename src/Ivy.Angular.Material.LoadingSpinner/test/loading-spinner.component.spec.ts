@@ -6,8 +6,6 @@ import { MatProgressSpinnerModule } from '@angular/material';
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { configureWebTests } from 'ivy.angular.test-helpers';
-
 import { LoadingSpinnerComponent } from '../src/Components/LoadingSpinner/loading-spinner.component';
 
 describe('LoadingSpinnerComponent', () => {
@@ -20,21 +18,16 @@ describe('LoadingSpinnerComponent', () => {
     // SetUp & TearDown - TESTING
     beforeEach(async () => {
 
-        const configureTestBed: (tb: TestBed) => void =
-            (tb: TestBed) => {
-                tb.configureTestingModule({
-                    imports: [
-                        CommonModule,
-                        FlexLayoutModule,
-                        MatProgressSpinnerModule
-                    ],
-                    declarations: [
-                        LoadingSpinnerComponent
-                    ],
-                });
-            };
-
-        await configureWebTests(configureTestBed);
+        TestBed.configureTestingModule({
+            imports: [
+                CommonModule,
+                FlexLayoutModule,
+                MatProgressSpinnerModule
+            ],
+            declarations: [
+                LoadingSpinnerComponent
+            ],
+        });
 
         fixture = TestBed.createComponent(LoadingSpinnerComponent);
         sut = fixture.componentInstance;

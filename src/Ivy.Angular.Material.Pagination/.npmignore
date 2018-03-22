@@ -1,0 +1,10 @@
+# Folders
+bin/
+coverage/
+dist/
+obj/
+test/
+
+# Files
+debug.log
+yarn-error.log

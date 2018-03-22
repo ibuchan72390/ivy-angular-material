@@ -33,12 +33,12 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".npmignore" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="src\Components\PaginatedList\paginated-list.component.css" />
     <Content Include="src\Components\PaginatedList\paginated-list.component.html" />
     <Content Include="tsconfig.json" />
-    <Content Include="tsconfig.test.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\Components\" />

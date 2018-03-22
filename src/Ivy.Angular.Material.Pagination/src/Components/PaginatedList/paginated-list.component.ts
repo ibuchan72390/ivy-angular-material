@@ -1,4 +1,6 @@
-﻿import { Component, Output, Input, EventEmitter, OnInit } from '@angular/core';
+﻿declare var require: any;
+
+import { Component, Output, Input, EventEmitter, OnInit } from '@angular/core';
 
 import { Observable } from 'rxjs';
 

@@ -1,8 +1,6 @@
 ﻿import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatProgressSpinnerModule } from '@angular/material';
 
 import { LoadingSpinnerComponent } from './src/Components/LoadingSpinner/loading-spinner.component';
 
@@ -14,11 +12,7 @@ let declarations: any[] = [
 
 // NgModule
 @NgModule({
-    imports: [
-        CommonModule,
-        FlexLayoutModule,
-        MatProgressSpinnerModule
-    ],
+    imports: [CommonModule],
     declarations: declarations,
     exports: declarations
 })

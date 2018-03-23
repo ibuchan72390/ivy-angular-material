@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.pagination",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Client-side pagination helpers to work with Ivy C# Pagination Transformers and Angular Material",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",

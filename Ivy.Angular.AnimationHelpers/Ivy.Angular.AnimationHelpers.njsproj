@@ -49,6 +49,9 @@
     <TypeScriptCompile Include="test\animation-helper.const.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="test\index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="karma.conf.js" />

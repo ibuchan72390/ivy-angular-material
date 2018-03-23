@@ -1,7 +1,7 @@
 ﻿import 'jasmine';
 
 import { WindowRefService } from 'ivy.angular.web';
-import { MaterialsWidthHelper } from '../src/WidthHelper/materials-width-helper.service';
+import { MaterialsWidthHelper } from '../src/Services/materials-width-helper.service';
 
 describe('MaterialsWidthHelper', () => {
 

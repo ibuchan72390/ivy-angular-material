@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.collapsible-panel",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Collapsible Panel component for Angular from the Ivy C# framework",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",

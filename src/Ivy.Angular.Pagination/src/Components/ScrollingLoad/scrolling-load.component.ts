@@ -1,4 +1,6 @@
-﻿import {
+﻿declare var require: any;
+
+import {
     Component,
     Input,
     Output,
@@ -55,11 +57,13 @@ export class ScrollingLoadComponent implements OnInit, AfterViewChecked {
 
     constructor(
         private math: MathHelper
-        ) {
+    ) {
+        this.req = new PaginatedRequest();
+        this.req.pageCount = 5;
     }
 
 
-    private req: PaginatedRequest = new PaginatedRequest();
+    private req: PaginatedRequest;
     private pageHeight: number;
     private adjustedHeight: number;
 
@@ -81,10 +85,6 @@ export class ScrollingLoadComponent implements OnInit, AfterViewChecked {
 
         if (this.countPerLoad != null) {
             this.req.pageCount = this.countPerLoad;
-        } else {
-
-            // Seems a bit more reasonable than 10
-            this.req.pageCount = 5;
         }
 
         this.emitPageReq();

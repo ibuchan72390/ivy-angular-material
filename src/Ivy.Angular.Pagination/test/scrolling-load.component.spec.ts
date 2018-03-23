@@ -3,9 +3,10 @@
 import { TestBed, ComponentFixture, async, getTestBed, ComponentFixtureAutoDetect } from '@angular/core/testing';
 import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
 
-import { configureWebTests } from 'ivy.angular.test-helpers';
+import { IvyAngularPaginationModule } from '../ivy.angular.pagination.module';
+
 import { PaginatedRequest, PaginatedResponse } from 'ivy.angular.data';
-import { MathHelper, IvyValueHelpersModule } from 'ivy.angular.value-helpers';
+import { IvyValueHelpersModule } from 'ivy.angular.value-helpers';
 
 import { ScrollingLoadComponent } from '../src/Components/ScrollingLoad/scrolling-load.component';
 
@@ -14,61 +15,23 @@ describe('ScrollingLoadComponent', () => {
     let component: ScrollingLoadComponent;
     let fixture: ComponentFixture<ScrollingLoadComponent>;
 
-    beforeEach(done => {
+    beforeEach(() => {
 
-        //const configure: (TestBed: TestBed) => void =
-        //    (testBed: TestBed) => {
-
-        //        testBed.configureTestingModule({
-        //            imports: [
-        //                IvyValueHelpersModule.forRoot()
-        //            ],
-        //            declarations: [
-        //                ScrollingLoadComponent
-        //            ],
-        //        });
-        //    };
-
-        const testBed = getTestBed();
-
-        if (testBed.platform == null) {
-            testBed.initTestEnvironment(
-                BrowserDynamicTestingModule,
-                platformBrowserDynamicTesting());
-        }
-
-        testBed.configureCompiler({
-            providers: [
-                { provide: ComponentFixtureAutoDetect, useValue: true },
-            ]
-        });
-
-        testBed.configureTestingModule({
+        TestBed.configureTestingModule({
             imports: [
-                IvyValueHelpersModule.forRoot()
-            ],
-            declarations: [
-                ScrollingLoadComponent
-            ],
-            providers: [
-                { provide: MathHelper, useClass: MathHelper }
+                /*
+                 * This demonstrates a proper module loading pattern
+                 * This module only provides services, so we don't include it in the Module
+                 * However, we need the services for testing, so we include it in the config here
+                 * This would represent the actual consuming app very closely
+                 */
+                IvyValueHelpersModule.forRoot(),
+                IvyAngularPaginationModule
             ]
         });
 
-        testBed.compileComponents();
-
-        fixture = testBed.createComponent(ScrollingLoadComponent);
+        fixture = TestBed.createComponent(ScrollingLoadComponent);
         component = fixture.componentInstance;
-
-        done();
-
-        //return testBed.compileComponents()
-        //    .catch(err => {
-        //        console.log('Test Bed Init Err: ', err);
-        //    })
-        //    .then(() => {
-        //        return testBed;
-        //    });
     });
 
     // onScroll
@@ -100,100 +63,218 @@ describe('ScrollingLoadComponent', () => {
         expect(resultEmit).toBe(undefined);
     });
 
-    //it('onScroll increments page if scrollTop + clientHeight == scrollHeight and response is null', () => {
+    it('onScroll increments page if scrollTop + clientHeight == scrollHeight and response is null', () => {
 
-    //    component.containerDiv = {
-    //        nativeElement: {
-    //            clientHeight: 1000
-    //        }
-    //    };
+        component.containerDiv = {
+            nativeElement: {
+                clientHeight: 1000
+            }
+        };
 
-    //    let event = {
-    //        target: {
-    //            scrollTop: 0,
-    //            scrollHeight: 1000
-    //        }
-    //    };
+        let event = {
+            target: {
+                scrollTop: 0,
+                scrollHeight: 1000
+            }
+        };
 
-    //    expect(event.target.scrollTop + component.containerDiv.nativeElement.clientHeight)
-    //        .toBe(event.target.scrollHeight);
+        expect(event.target.scrollTop + component.containerDiv.nativeElement.clientHeight)
+            .toBe(event.target.scrollHeight);
 
 
-    //    let resultEmit: PaginatedRequest;
-    //    component.onScrollBottom.subscribe((result: PaginatedRequest) => resultEmit = result);
+        let resultEmit: PaginatedRequest;
+        component.onScrollBottom.subscribe((result: PaginatedRequest) => resultEmit = result);
 
-    //    component.response = new PaginatedResponse();
+        component.response = new PaginatedResponse();
 
-    //    // Ensure it can fire next page
-    //    component.response.totalCount = 100;
+        // Ensure it can fire next page
+        component.response.totalCount = 100;
 
-    //    component.onScroll(event);
+        component.onScroll(event);
 
-    //    expect(resultEmit).not.toBe(undefined);
-    //    expect(resultEmit).not.toBe(null);
-    //    expect(resultEmit.pageCount).toBe(5);  // Default in component
-    //    expect(resultEmit.search).toBe(null);  // Default
-    //    expect(resultEmit.pageNumber).toBe(2); // Default ++1
-    //});
+        expect(resultEmit).not.toBe(undefined);
+        expect(resultEmit).not.toBe(null);
+        expect(resultEmit.pageCount).toBe(5);  // Default in component
+        expect(resultEmit.search).toBe(null);  // Default
+        expect(resultEmit.pageNumber).toBe(2); // Default ++1
+    });
 
-    //// ngOnInit
-    //it('onInit sets pageCount = to 5 if no pageCount provided', () => {
+    // ngOnInit
+    it('onInit sets pageCount = to 5 if no pageCount provided', () => {
 
-    //    component.response = new PaginatedResponse();
+        component.response = new PaginatedResponse();
 
-    //    // Ensure it can fire next page
-    //    component.response.totalCount = 100;
+        // Ensure it can fire next page
+        component.response.totalCount = 100;
 
-    //    let resultEmit: PaginatedRequest;
-    //    component.onScrollBottom.subscribe((result: PaginatedRequest) => resultEmit = result);
+        let resultEmit: PaginatedRequest;
+        component.onScrollBottom.subscribe((result: PaginatedRequest) => resultEmit = result);
 
-    //    component.ngOnInit();
+        component.ngOnInit();
 
-    //    expect(resultEmit.pageCount).toBe(5);  // Default in component
-    //});
+        expect(resultEmit.pageCount).toBe(5);  // Default in component
+    });
 
-    //it('onInit sets pageCount = custom if countPerLoad has been provided', () => {
+    it('onInit sets pageCount = custom if countPerLoad has been provided', () => {
 
-    //    component.response = new PaginatedResponse();
+        component.response = new PaginatedResponse();
 
-    //    // Ensure it can fire next page
-    //    component.response.totalCount = 100;
+        // Ensure it can fire next page
+        component.response.totalCount = 100;
 
-    //    let resultEmit: PaginatedRequest;
-    //    component.onScrollBottom.subscribe((result: PaginatedRequest) => resultEmit = result);
+        let resultEmit: PaginatedRequest;
+        component.onScrollBottom.subscribe((result: PaginatedRequest) => resultEmit = result);
 
-    //    component.countPerLoad = 123;
+        component.countPerLoad = 123;
 
-    //    component.ngOnInit();
+        component.ngOnInit();
 
-    //    expect(resultEmit.pageCount).toBe(component.countPerLoad);  // Default in component
-    //});
+        expect(resultEmit.pageCount).toBe(component.countPerLoad);  // Default in component
+    });
 
-    //// afterViewChecked
-    //it('afterViewChecked does nothing if response is null', () => {
+    // afterViewChecked
+    it('afterViewChecked does nothing if response is null', () => {
 
-    //});
+        component.response = null;
 
-    //it('afterViewChecked sets pageHeight to containerDiv clientHeight if not already set', () => { });
+        let req: PaginatedRequest = null;
+        component.onScrollBottom.subscribe((emit: PaginatedRequest) => req = emit);
 
-    //it('afterViewChecked changes page height if container div isnt equal to adjusted height', () => { });
+        component.ngAfterViewChecked();
 
-    //// getHeight
-    //it('getHeight returns 100% if maxHeight and page height are empty', () => {
+        expect(req).toBe(null);
+    });
 
-    //    component.maxHeight = null;
+    it('afterViewChecked sets pageHeight to containerDiv height, but does not emit page if not larger than contentDiv height', () => {
 
-    //    let result = component.getHeight();
+        component.containerDiv = {
+            nativeElement: { clientHeight: 100 }
+        };
 
-    //    expect(result).toBe('100%');
-    //});
+        component.contentDiv = {
+            nativeElement: { clientHeight: 200 }
+        };
 
-    //it('getHeight returns pageHeight px if provided', () => {
+        component.response = new PaginatedResponse();
 
-    //});
+        let req: PaginatedRequest = null;
+        component.onScrollBottom.subscribe((emit: PaginatedRequest) => req = emit);
 
-    //it('getHeight returns maxHeight px if no pageHeight provided', () => {
+        component.ngAfterViewChecked();
 
-    //});
+        expect(req).toBe(null);
+    });
+
+    it('afterViewChecked sets pageHeight to containerDiv height, and does emit page +1 if larger than contentDiv height', () => {
+
+        component.containerDiv = {
+            nativeElement: { clientHeight: 200 }
+        };
+
+        component.contentDiv = {
+            nativeElement: { clientHeight: 100 }
+        };
+
+        component.response = new PaginatedResponse();
+        component.response.totalCount = 100;
+
+        let req: PaginatedRequest = null;
+        component.onScrollBottom.subscribe((emit: PaginatedRequest) => req = emit);
+
+        component.ngAfterViewChecked();
+
+        expect(req).not.toBe(null);
+        expect(req.pageNumber).toBe(2);
+    });
+
+    it('afterViewChecked sets pageHeight to containerDiv height, and does not emit higher pages with subsequent requests', () => {
+
+        component.containerDiv = {
+            nativeElement: { clientHeight: 200 }
+        };
+
+        component.contentDiv = {
+            nativeElement: { clientHeight: 100 }
+        };
+
+        component.response = new PaginatedResponse();
+        component.response.totalCount = 100
+
+        let req: PaginatedRequest = null;
+        component.onScrollBottom.subscribe((emit: PaginatedRequest) => req = emit);
+
+        component.ngAfterViewChecked();
+
+        expect(req).not.toBe(null);
+        expect(req.pageNumber).toBe(2);
+
+        component.ngAfterViewChecked();
+
+        expect(req.pageNumber).toBe(2);
+    });
+
+    it('afterViewChecked sets pageHeight to containerDiv height, and will emit higher subsequent page if client height still below container', () => {
+
+        component.containerDiv = {
+            nativeElement: { clientHeight: 200 }
+        };
+
+        component.contentDiv = {
+            nativeElement: { clientHeight: 100 }
+        };
+
+        component.response = new PaginatedResponse();
+        component.response.totalCount = 100
+
+        let req: PaginatedRequest = null;
+        component.onScrollBottom.subscribe((emit: PaginatedRequest) => req = emit);
+
+        component.ngAfterViewChecked();
+
+        expect(req).not.toBe(null);
+        expect(req.pageNumber).toBe(2);
+
+        component.contentDiv.nativeElement.clientHeight = 150;
+
+        component.ngAfterViewChecked();
+
+        expect(req.pageNumber).toBe(3);
+    });
+
+    // getHeight
+    it('getHeight returns 100% if maxHeight and page height are empty', () => {
+
+        component.maxHeight = null;
+
+        let result = component.getHeight();
+
+        expect(result).toBe('100%');
+    });
+
+    it('getHeight returns pageHeight px if provided', () => {
+
+        component.containerDiv = {
+            nativeElement: {
+                clientHeight: 100
+            }
+        };
+
+        component.response = new PaginatedResponse();
+
+        component.ngAfterViewChecked();
+
+        let result = component.getHeight();
+
+        expect(result).toBe(component.containerDiv.nativeElement.clientHeight + 'px');
+    });
+
+    it('getHeight returns maxHeight px if no pageHeight provided', () => {
+
+        component.maxHeight = 100;
+
+        let result = component.getHeight();
+
+        expect(result).toBe(component.maxHeight + 'px');
+    });
 
 });

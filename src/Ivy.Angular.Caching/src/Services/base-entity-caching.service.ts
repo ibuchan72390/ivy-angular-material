@@ -58,14 +58,14 @@ export abstract class BaseEntityCachingService<TEntity extends BaseEntity> {
             } else {
 
                 this.rxInWaiting = this.internalInitFn().subscribe(
-                    success => {
+                    (success: TEntity[]) => {
                         this.configCache = success;
                         this.initialized = true;
                         this.rxInWaiting = null;
                         observer.next(success);
                         observer.complete();
                     },
-                    err => {
+                    (err: Error) => {
                         console.log(err);
                         observer.error(err);
                         observer.complete();

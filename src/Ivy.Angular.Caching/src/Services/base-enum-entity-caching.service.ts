@@ -26,7 +26,7 @@ export abstract class BaseEnumEntityCachingService<TEntity extends BaseEnumEntit
 
         return Observable.create((observer: Observer<TEntity>) => {
             this.getCache().subscribe(
-                cache => {
+                (cache: TEntity[]) => {
                     observer.next(this.getConfigFromCollection(cache, key));
                     observer.complete();
                 }

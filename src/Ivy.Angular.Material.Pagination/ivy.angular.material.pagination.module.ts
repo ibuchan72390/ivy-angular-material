@@ -4,6 +4,10 @@
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MatSelectModule, MatOptionModule, MatInputModule, MatIconModule, MatToolbarModule, MatCardModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Components
 import { PaginatedListComponent } from './src/Components/PaginatedList/paginated-list.component';
@@ -16,7 +20,20 @@ let declarations: any[] = [
 
 // NgModule
 @NgModule({
-    imports: [CommonModule],
+    imports: [
+        CommonModule,
+        BrowserAnimationsModule,
+        FormsModule,
+
+        MatSelectModule,
+        MatOptionModule,
+        MatInputModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatCardModule,
+
+        FlexLayoutModule
+    ],
     declarations: declarations,
     exports: declarations
 })

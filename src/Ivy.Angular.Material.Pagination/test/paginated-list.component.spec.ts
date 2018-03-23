@@ -1,14 +1,8 @@
 ﻿import 'jasmine';
 
-import { CommonModule } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
-import { MatSelectModule, MatOptionModule, MatInputModule, MatIconModule, MatToolbarModule, MatCardModule } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-//import { configureWebTests } from 'ivy.angular.test-helpers';
+import { IvyAngularMaterialPaginationModule } from '../ivy.angular.material.pagination.module';
 
 import { PaginatedRequest, BasePaginatedResponse } from 'ivy.angular.data';
 
@@ -27,22 +21,8 @@ describe('PaginatedListComponent', () => {
 
         TestBed.configureTestingModule({
             imports: [
-                CommonModule,
-                BrowserAnimationsModule,
-                FormsModule,
-
-                MatSelectModule,
-                MatOptionModule,
-                MatInputModule,
-                MatIconModule,
-                MatToolbarModule,
-                MatCardModule,
-
-                FlexLayoutModule
-            ],
-            declarations: [
-                PaginatedListComponent
-            ],
+                IvyAngularMaterialPaginationModule
+            ]
         });
 
         fixture = TestBed.createComponent(PaginatedListComponent);

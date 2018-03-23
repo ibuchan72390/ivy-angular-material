@@ -3,6 +3,7 @@
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatProgressSpinnerModule } from '@angular/material';
+import { IvyAngularMaterialLoadingSpinnerModule } from '../ivy.angular.material.loading-spinner.module';
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -20,13 +21,12 @@ describe('LoadingSpinnerComponent', () => {
 
         TestBed.configureTestingModule({
             imports: [
-                CommonModule,
-                FlexLayoutModule,
-                MatProgressSpinnerModule
+                
+                IvyAngularMaterialLoadingSpinnerModule
             ],
-            declarations: [
-                LoadingSpinnerComponent
-            ],
+            //declarations: [
+            //    LoadingSpinnerComponent
+            //],
         });
 
         fixture = TestBed.createComponent(LoadingSpinnerComponent);

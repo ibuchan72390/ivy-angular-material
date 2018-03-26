@@ -1,0 +1,51 @@
+{
+  "name": "ivy.angular.material.file-uploader",
+  "version": "0.0.0",
+  "description": "File Uploader leveraging the Material Design library",
+  "author": "ibuchan@iamglobaleducation.com",
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "karma start ./karma.conf.js --single-run",
+    "test-debug": "karma start ./karma.conf.js",
+    "prepublish": "tsc",
+    "test-publish": "tsc && npm link"
+  },
+  "dependencies": {
+    "@angular/animations": "^5.2.9",
+    "@angular/cdk": "^5.2.4",
+    "@angular/common": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/forms": "^5.2.9",
+    "@angular/material": "^5.2.4",
+    "core-js": "^2.5.3",
+    "rxjs": "^5.5.7",
+    "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "@types/jasmine": "^2.8.6",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^5.0.0-1",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-jasmine-html-reporter": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.0",
+    "typescript": "^2.7.2",
+    "webpack": "^4.2.0"
+  }
+}

@@ -224,4 +224,23 @@ describe('FileUploaderComponent', () => {
         expect(errorEmit).toBe(true);
         expect(sut.fileName).toBe(filename1);
     });
+
+    it('disabled removes functionality from the file-input element', () => {
+
+        sut.disabled = false;
+
+        fixture.detectChanges();
+
+        let inputElem = fixture.debugElement.nativeElement.querySelector('input');
+
+        expect(inputElem.disabled).toBe(sut.disabled);
+
+        sut.disabled = true;
+
+        fixture.detectChanges();
+
+        inputElem = fixture.debugElement.nativeElement.querySelector('input');
+
+        expect(inputElem.disabled).toBe(sut.disabled);
+    });
 });

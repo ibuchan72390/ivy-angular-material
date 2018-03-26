@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.file-uploader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "File Uploader leveraging the Material Design library",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -22,13 +22,13 @@
     "@angular/core": "^5.2.9",
     "@angular/forms": "^5.2.9",
     "@angular/material": "^5.2.4",
+    "@angular/platform-browser": "^5.2.9",
     "core-js": "^2.5.3",
     "rxjs": "^5.5.7",
     "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
   },
   "devDependencies": {
     "@angular/compiler": "^5.2.9",
-    "@angular/platform-browser": "^5.2.9",
     "@angular/platform-browser-dynamic": "^5.2.9",
     "@types/jasmine": "^2.8.6",
     "angular2-template-loader": "^0.6.2",

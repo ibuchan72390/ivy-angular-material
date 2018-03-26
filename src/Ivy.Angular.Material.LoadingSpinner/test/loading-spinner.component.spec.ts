@@ -23,10 +23,7 @@ describe('LoadingSpinnerComponent', () => {
             imports: [
                 
                 IvyAngularMaterialLoadingSpinnerModule
-            ],
-            //declarations: [
-            //    LoadingSpinnerComponent
-            //],
+            ]
         });
 
         fixture = TestBed.createComponent(LoadingSpinnerComponent);

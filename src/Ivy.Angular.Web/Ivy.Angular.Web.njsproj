@@ -48,6 +48,9 @@
     <TypeScriptCompile Include="src\Services\browser-detection.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="src\Services\mobile-detection.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="src\Services\os-detection.service.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
@@ -61,6 +64,9 @@
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="test\browser-detection.service.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\mobile-detection.service.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="test\os-detection.service.spec.ts">

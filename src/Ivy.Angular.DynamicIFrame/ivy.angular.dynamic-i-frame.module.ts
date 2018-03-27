@@ -20,9 +20,7 @@ let declarations: any[] = [
 // NgModule
 @NgModule({
     imports: [
-        CommonModule,
-
-        IvyWebModule
+        CommonModule
     ],
     providers: providers,
     declarations: declarations,

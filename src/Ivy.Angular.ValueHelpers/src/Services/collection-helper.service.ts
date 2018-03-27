@@ -6,6 +6,16 @@ import { BaseEnumEntity } from 'ivy.angular.data';
 @Injectable()
 export class CollectionHelper {
 
+    range(count: number, start: number = 0): number[] {
+        let arr = Array.from(new Array(count).keys());
+
+        if (start != 0) {
+            arr = arr.map((val, index) => index + start);
+        }
+
+        return arr;
+    }
+
     max(col: number[]): number {
 
         return this.internalMax<number>(col);

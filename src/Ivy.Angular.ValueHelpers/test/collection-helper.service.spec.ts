@@ -13,6 +13,31 @@ describe('CollectionHelper', () => {
     beforeEach(() => sut = new CollectionHelper());
 
 
+    // range
+    it('range properly creates array of numbers of desired length starting from 0', () => {
+
+        const count: number = 5;
+
+        let result = sut.range(count);
+
+        for (var i = 0; i < count; i++) {
+            expect(result[i]).toBe(i);
+        }
+    });
+
+    it('range properly creates array of numbers of desired length starting from alternate start', () => {
+
+        const count: number = 5;
+        const start: number = 10;
+
+        let result = sut.range(count, start);
+
+        for (var i = 0; i < count; i++) {
+            expect(result[i]).toBe(i + start);
+        }
+    });
+
+
     // max
     it('max returns max value from collection', () => {
 

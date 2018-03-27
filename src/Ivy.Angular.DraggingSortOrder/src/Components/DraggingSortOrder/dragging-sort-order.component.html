@@ -1,0 +1,10 @@
+﻿
+<div [dragula]="dragulaId"
+     [dragulaOptions]="dragulaOptions"
+     [dragulaModel]="sortedContent"
+     (touchmove)="onClick($event)"
+     class="sort-order-content">
+
+    <ng-content></ng-content>
+
+</div>

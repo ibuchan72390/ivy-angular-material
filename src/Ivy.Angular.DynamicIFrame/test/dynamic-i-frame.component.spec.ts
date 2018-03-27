@@ -7,7 +7,7 @@ import { IvyValueHelpersModule } from 'ivy.angular.value-helpers';
 
 import { DynamicIFrameComponent } from '../src/Components/DynamicIFrame/dynamic-i-frame.component';
 
-import { OsDetectionService, MobileDetectionService } from 'ivy.angular.web';
+import { IvyWebModule, OsDetectionService, MobileDetectionService } from 'ivy.angular.web';
 
 describe('DynamicIFrameComponent', () => {
 
@@ -24,7 +24,8 @@ describe('DynamicIFrameComponent', () => {
         TestBed.configureTestingModule({
             imports: [
                 IvyAngularDynamicIFrameModule,
-                IvyValueHelpersModule.forRoot()
+                IvyWebModule,
+                IvyValueHelpersModule
             ]
         });
 

@@ -23,11 +23,4 @@ let providers: any[] = [
     providers: providers
 })
 export class IvyValueHelpersModule {
-
-    static forRoot(): ModuleWithProviders {
-        return {
-            ngModule: IvyValueHelpersModule,
-            providers: providers
-        };
-    }
 }

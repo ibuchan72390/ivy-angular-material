@@ -36,10 +36,19 @@
     <Content Include="karma.conf.js" />
     <Content Include="ivy.angular.full-image.module.ts" />
     <Content Include="webpack.config.js" />
+    <Content Include="src\Component\FullImage\full-image.component.html" />
+    <Content Include="src\Component\FullImage\full-image.component.ts" />
+    <Content Include="src\Component\FullImage\full-image.component.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src/**/*" />
     <Content Include="src/*" />
     <Content Include="test/*" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\Component\" />
+    <Folder Include="src\Component\FullImage\" />
     <Folder Include="test\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

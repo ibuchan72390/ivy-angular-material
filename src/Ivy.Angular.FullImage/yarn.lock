@@ -2510,6 +2510,40 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+ivy.angular.data@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
+
+ivy.angular.material.helpers@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/ivy.angular.material.helpers/-/ivy.angular.material.helpers-1.0.8.tgz#89ae6ae7c78c17c404981ce3510955d1e0fb30ca"
+  dependencies:
+    "@angular/common" "^5.2.9"
+    "@angular/core" "^5.2.9"
+    ivy.angular.web "^1.0.2"
+    rxjs "^5.5.6"
+    zone.js "^0.8.19"
+
+ivy.angular.value-helpers@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.9.tgz#7b80dc6895b84a365b091ce356372498dd8113e1"
+  dependencies:
+    "@angular/core" "^5.2.9"
+    ivy.angular.data "^1.0.1"
+    jasmine-core "^3.1.0"
+    rxjs "^5.5.6"
+    zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+
+ivy.angular.web@^1.0.2:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.0.8.tgz#d6eacccc0d76ff8bf3710d5a20148927b3935629"
+  dependencies:
+    "@angular/common" "^5.2.9"
+    "@angular/core" "^5.2.9"
+    ng2-device-detector "^1.0.1"
+    rxjs "^5.5.6"
+    zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.1.0.tgz#a4785e135d5df65024dfc9224953df585bd2766c"
@@ -3112,6 +3146,10 @@ neo-async@^2.5.0:
 netmask@~1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
+
+ng2-device-detector@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ng2-device-detector/-/ng2-device-detector-1.0.1.tgz#5abbc6380eac8b265f7dded9451a2672c18c8eaf"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -4246,7 +4284,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^5.5.8:
+rxjs@^5.5.6, rxjs@^5.5.8:
   version "5.5.8"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.8.tgz#b2b0809a57614ad6254c03d7446dea0d83ca3791"
   dependencies:
@@ -5153,6 +5191,6 @@ yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
-"zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
+zone.js@^0.8.19, "zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
   version "0.8.20"
   resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"

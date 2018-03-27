@@ -42,7 +42,7 @@ module.exports = class extends Generator {
     copyComponentTest() {
 
         this.fs.copyTpl(
-            this.templatePath('template.component.ts'),
+            this.templatePath('template.component.spec.ts'),
             this.destinationPath('test/' + this.getModuleName() + '.component.spec.ts'),
             { name: this.options.name, moduleName: this.getModuleName() }
         );

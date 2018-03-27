@@ -36,6 +36,8 @@
     <Content Include="karma.conf.js" />
     <Content Include="ivy.angular.<%= moduleName %>.module.ts" />
     <Content Include="webpack.config.js" />
+    <Content Include="src/**/**/*" />
+    <Content Include="src/**/*" />
     <Content Include="src/*" />
     <Content Include="test/*" />
   </ItemGroup>

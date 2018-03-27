@@ -12,12 +12,27 @@ module.exports = class extends Generator {
         // Need the name of the project
         this.argument('name', { type: String, required: true });
 
+        this.option('material');
+
         this.getModuleName = function () {
-            return Case.kebab(this.options.name);
+
+            let kebab = Case.kebab(this.options.name);
+
+            if (this.options.material) {
+                kebab = 'material.' + kebab;
+            }
+
+            return kebab;
         }
 
         this.getProjectName = function () {
-            return 'Ivy.Angular.' + this.options.name;
+
+            if (this.options.material) {
+                return 'Ivy.Angular.Material.' + this.options.name;
+
+            } else {
+                return 'Ivy.Angular.' + this.options.name;
+            }
         }
     }
 
@@ -160,4 +175,15 @@ module.exports = class extends Generator {
         this.yarnInstall(testRequirements, { 'dev': true });
     }
 
+    setupMaterialIfNecessary() {
+        if (this.options.material) {
+
+            let materialRequirements = [
+                '@angular/material',
+                '@angular/cdk'
+            ];
+
+            this.yarnInstall(materialRequirements);
+        }
+    }
 };

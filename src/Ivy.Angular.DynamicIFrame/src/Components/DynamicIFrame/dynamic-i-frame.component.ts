@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 import { OsDetectionService, MobileDetectionService } from 'ivy.angular.web';
-import { StringHelper } from 'ivy.angular.value-helpers';
+import { ValidationHelper } from 'ivy.angular.value-helpers';
 
 /*
  * This component is being created because we specifically have some issues working
@@ -45,18 +45,15 @@ export class DynamicIFrameComponent implements OnInit {
         private osDetector: OsDetectionService,
         private mobileDetector: MobileDetectionService,
         private sanitizer: DomSanitizer,
-        private stringHelper: StringHelper) {
+        private validationHelper: ValidationHelper) {
     }
 
     ngOnInit(): void {
 
-        if (this.stringHelper.isNullOrEmpty(this.src)) {
+        this.validationHelper.stringIsNotNullOrEmpty(this.src,
+            'DynamicIFrame must have src before it is initialized!');
 
-            throw 'DynamicIFrame must have src before it is initialized!';
-        } else {
-
-            this.safeSrc = this.sanitizer.bypassSecurityTrustResourceUrl(this.src);
-        }
+        this.safeSrc = this.sanitizer.bypassSecurityTrustResourceUrl(this.src);
     }
 
     useCustomIFrame(): boolean {

@@ -2518,14 +2518,15 @@ ivy.angular.data@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
-ivy.angular.value-helpers@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.4.tgz#2b4de88bf298cc1d50b701e2c956a4165335d240"
+ivy.angular.value-helpers@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.10.tgz#b97fb81478ba8cc2a9341bd26446fa995d69f85c"
   dependencies:
     "@angular/core" "^5.2.9"
     ivy.angular.data "^1.0.1"
+    jasmine-core "^3.1.0"
     rxjs "^5.5.6"
-    zone.js "^0.8.20"
+    zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
 
 ivy.angular.web@^1.0.7:
   version "1.0.7"
@@ -5184,6 +5185,6 @@ yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
-zone.js@^0.8.20, "zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
+"zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
   version "0.8.20"
   resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"

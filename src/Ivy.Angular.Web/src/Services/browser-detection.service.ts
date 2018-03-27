@@ -46,7 +46,7 @@ export class BrowserDetectionService {
     }
 
     private testBrowser(browser: string): boolean {
-        
+
         return this.deviceSvc.browser.toLowerCase() == browser.toLowerCase();
     }
 }

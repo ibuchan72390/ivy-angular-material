@@ -12,6 +12,10 @@ import { WindowRefService } from './src/Services/window-ref.service';
 import { MobileDetectionService } from './src/Services/mobile-detection.service'
 
 // Service Collection
+let imports: any[] = [
+    Ng2DeviceDetectorModule.forRoot()
+];
+
 let providers: any[] = [
     OsDetectionService,
     BrowserDetectionService,
@@ -21,6 +25,7 @@ let providers: any[] = [
 
 // NgModule
 @NgModule({
+    imports: imports,
     providers: providers
 })
 export class IvyWebModule {

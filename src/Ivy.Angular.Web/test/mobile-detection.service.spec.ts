@@ -1,10 +1,27 @@
 ﻿import 'jasmine';
 
-import { Ng2DeviceService } from 'ng2-device-detector';
+import { TestBed } from '@angular/core/testing';
 
+import { IvyWebModule } from '../ivy.web.module';
+
+import { Ng2DeviceService } from 'ng2-device-detector';
 import { MobileDetectionService } from '../src/Services/mobile-detection.service';
 
 describe('MobileDetectionService', () => {
+
+    let sut: MobileDetectionService;
+
+    beforeEach(() => {
+
+        TestBed.configureTestingModule({
+            imports: [
+                IvyWebModule
+            ]
+        });
+
+        sut = TestBed.get(MobileDetectionService);
+
+    });
 
     // isMobile Tests
     it('isMobile properly identifies Android user agent string', () => {
@@ -88,14 +105,12 @@ describe('MobileDetectionService', () => {
         executeFn: (browserDetector: MobileDetectionService) => boolean,
         expected: boolean) {
 
-        let deviceServiceSpy = new Ng2DeviceService();
-        deviceServiceSpy.userAgent = 'TEST' + expectedAgentString + 'TEST';
+        let newAgentString = 'TEST' + expectedAgentString + 'TEST';
 
-        let sut = new MobileDetectionService(deviceServiceSpy);
+        let deviceSvc = TestBed.get(Ng2DeviceService);
+        deviceSvc.userAgent = newAgentString;
 
         let result = executeFn(sut);
-
-        console.log('Result is: ', result);
 
         expect(result).toBe(expected);
     }

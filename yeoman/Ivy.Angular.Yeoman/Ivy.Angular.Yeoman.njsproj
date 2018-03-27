@@ -37,6 +37,7 @@
     <Content Include="generators\app\templates\package.json" />
     <Content Include="generators\app\templates\README.md" />
     <Content Include="generators\app\templates\tsconfig.json" />
+    <Content Include="generators\component\templates\template.component.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
@@ -48,6 +49,8 @@
     <Folder Include="generators\component\templates\" />
     <Folder Include="generators\guard\" />
     <Folder Include="generators\guard\templates\" />
+    <Folder Include="generators\pipe\" />
+    <Folder Include="generators\pipe\templates\" />
     <Folder Include="generators\service\" />
     <Folder Include="generators\service\templates\" />
   </ItemGroup>
@@ -61,12 +64,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="generators\guard\index.js" />
+    <Compile Include="generators\pipe\index.js" />
     <Compile Include="generators\service\index.js" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="generators\app\templates\index.ts" />
     <TypeScriptCompile Include="generators\app\templates\template.module.ts" />
     <TypeScriptCompile Include="generators\app\templates\test-index.ts" />
+    <TypeScriptCompile Include="generators\component\templates\template.component.spec.ts" />
+    <TypeScriptCompile Include="generators\component\templates\template.component.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

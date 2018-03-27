@@ -266,6 +266,14 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
+generator-ivy-angular@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/generator-ivy-angular/-/generator-ivy-angular-0.1.1.tgz#3dd8ce37eb30b187f3f2f34e3a52a76139337207"
+  dependencies:
+    case "^1.5.4"
+    mkdirp "^0.5.1"
+    yeoman-generator "^1.0.0"
+
 get-stream@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14"

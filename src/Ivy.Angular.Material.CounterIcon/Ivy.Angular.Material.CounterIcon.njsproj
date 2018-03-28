@@ -36,10 +36,12 @@
     <Content Include="karma.conf.js" />
     <Content Include="ivy.angular.material.counter-icon.module.ts" />
     <Content Include="webpack.config.js" />
-    <Content Include="src/**/**/*" />
+    <Content Include="src\Components\CounterIcon\counter-icon.component.html" />
+    <Content Include="src\Components\CounterIcon\counter-icon.component.ts" />
     <Content Include="src/**/*" />
     <Content Include="src/*" />
-    <Content Include="test/*" />
+    <Content Include="test\counter-icon.component.spec.ts" />
+    <Content Include="test\index.ts" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />

@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.pdf-reader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -25,6 +25,7 @@
     "@angular/animations": "^5.2.9",
     "@angular/cdk": "^5.2.4",
     "@angular/core": "^5.2.9",
+    "@angular/flex-layout": "^5.0.0-beta.13",
     "@angular/forms": "^5.2.9",
     "@angular/material": "^5.2.4",
     "@types/pdfjs-dist": "0.1.1",

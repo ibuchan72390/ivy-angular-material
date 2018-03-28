@@ -2,15 +2,15 @@
 
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 
-import { IvyAngular<%= name %>Module } from '../ivy.angular.<%= moduleName %>.module';
+import { IvyAngular<%= materialName %>Module } from '../ivy.angular.<%= kebabDotName %>.module';
 
-import { <%= name %>Component } from '../src/Components/<%= name %>/<%= moduleName %>.component';
+import { <%= materialName %>Component } from '../src/Components/<%= name %>/<%= kebabName %>.component';
 
-describe('<%= name %>', () => {
+describe('<%= materialName %>Component', () => {
 
     // Variables
-    let fixture: ComponentFixture<<%= name %>Component>;
-    let sut: <%= name %>Component;
+    let fixture: ComponentFixture<<%= materialName %>Component>;
+    let sut: <%= materialName %>Component;
 
 
     // Setup
@@ -18,11 +18,11 @@ describe('<%= name %>', () => {
 
         TestBed.configureTestingModule({
             imports: [
-                IvyAngular<%= name %>Module
+                IvyAngular<%= materialName %>Module
             ]
         });
 
-        fixture = TestBed.createComponent(<%= name %>Component);
+        fixture = TestBed.createComponent(<%= materialName %>Component);
         sut = fixture.componentInstance;
     });
 

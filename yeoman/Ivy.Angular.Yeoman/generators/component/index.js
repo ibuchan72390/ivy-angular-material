@@ -12,21 +12,64 @@ module.exports = class extends Generator {
         // Need the name of the project
         this.argument('name', { type: String, required: true });
 
-        this.getModuleName = function () {
+        this.option('material');
+
+        this.getReplacementParams = function () {
+            return {
+                name: this.options.name,
+                materialName: this.getNameWithMaterial(),               // MaterialNotificationIcon
+                kebabName: this.getKebabName(),                         // notification-icon
+                kebabDotName: this.getKebabDotNameWithMaterial(),       // material.notification-icon
+                kebabMaterialName: this.getKebabDashNameWithMaterial()
+            };
+        }
+
+        this.getNameWithMaterial = function () {
+
+            let name = this.options.name;
+
+            if (this.options.material) {
+                name = 'Material' + name;
+
+            } 
+
+            return name;
+        }
+
+        this.getKebabDashNameWithMaterial = function () {
+
+            let kebabName = this.getKebabName();
+
+            if (this.options.material) {
+                kebabName = 'material-' + kebabName;
+            }
+
+            return kebabName;
+        }
+
+        this.getKebabDotNameWithMaterial = function () {
+
+            let kebabName = this.getKebabName();
+
+            if (this.options.material) {
+                kebabName = 'material.' + kebabName;
+            }
+
+            return kebabName;
+        }
+
+        this.getKebabName = function () {
             return Case.kebab(this.options.name);
         }
 
-        this.getProjectName = function () {
-            return 'Ivy.Angular.' + this.options.name;
-        }
     }
 
     copyComponentTypeScript() {
 
         this.fs.copyTpl(
             this.templatePath('template.component.ts'),
-            this.destinationPath('src/Component/' + this.options.name + '/' + this.getModuleName() + '.component.ts'),
-            { name: this.options.name, moduleName: this.getModuleName() }
+            this.destinationPath('src/Components/' + this.options.name + '/' + this.getKebabName() + '.component.ts'),
+            this.getReplacementParams()
         );
     }
 
@@ -34,8 +77,8 @@ module.exports = class extends Generator {
 
         this.fs.copyTpl(
             this.templatePath('template.component.html'),
-            this.destinationPath('src/Component/' + this.options.name + '/' + this.getModuleName() + '.component.html'),
-            { name: this.options.name }
+            this.destinationPath('src/Components/' + this.options.name + '/' + this.getKebabName() + '.component.html'),
+            this.getReplacementParams()
         );
     }
 
@@ -43,8 +86,8 @@ module.exports = class extends Generator {
 
         this.fs.copyTpl(
             this.templatePath('template.component.spec.ts'),
-            this.destinationPath('test/' + this.getModuleName() + '.component.spec.ts'),
-            { name: this.options.name, moduleName: this.getModuleName() }
+            this.destinationPath('test/' + this.getKebabName() + '.component.spec.ts'),
+            this.getReplacementParams()
         );
     }
 };

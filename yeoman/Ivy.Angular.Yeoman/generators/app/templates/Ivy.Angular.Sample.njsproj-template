@@ -2,8 +2,8 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>Ivy.Angular.<%= name %></Name>
-    <RootNamespace>Ivy.Angular.<%= name %></RootNamespace>
+    <Name>Ivy.Angular.<%= dotName %></Name>
+    <RootNamespace>Ivy.Angular.<%= dotName %></RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -34,7 +34,7 @@
     <Content Include="tsconfig.json" />
     <Content Include="index.ts" />
     <Content Include="karma.conf.js" />
-    <Content Include="ivy.angular.<%= moduleName %>.module.ts" />
+    <Content Include="ivy.angular.<%= kebabName %>.module.ts" />
     <Content Include="webpack.config.js" />
     <Content Include="src/**/**/*" />
     <Content Include="src/**/*" />

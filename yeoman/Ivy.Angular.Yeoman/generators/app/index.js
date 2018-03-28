@@ -14,7 +14,35 @@ module.exports = class extends Generator {
 
         this.option('material');
 
-        this.getModuleName = function () {
+        this.getReplacementParams = function () {
+            return {
+                name: this.getName(),
+                dotName: this.getDotName(),
+                kebabName: this.getKebabName()
+            };
+        }
+
+        this.getName = function () {
+
+            if (this.options.material) {
+                return 'Material' + this.options.name;
+
+            } else {
+                return this.options.name;
+            }
+        }
+
+        this.getDotName = function () {
+
+            if (this.options.material) {
+                return 'Material.' + this.options.name;
+
+            } else {
+                return this.options.name;
+            }
+        }
+
+        this.getKebabName = function () {
 
             let kebab = Case.kebab(this.options.name);
 
@@ -25,49 +53,40 @@ module.exports = class extends Generator {
             return kebab;
         }
 
-        this.getProjectName = function () {
-
-            if (this.options.material) {
-                return 'Ivy.Angular.Material.' + this.options.name;
-
-            } else {
-                return 'Ivy.Angular.' + this.options.name;
-            }
+        this.getIvyAngularName = function () {
+            return 'Ivy.Angular.' + this.getDotName();
         }
     }
 
     setDestinationRoot() {
 
-        this.log('Directory name is ' + this.getProjectName());
+        this.log('Directory name is ' + this.getIvyAngularName());
 
-        this.destinationRoot(this.getProjectName());
+        this.destinationRoot(this.getIvyAngularName());
     }
 
     logInputs() {
 
         this.log('Project name is ' + this.options.name);
-        this.log('Module name is ' + this.getModuleName());
+        this.log('Module name is ' + this.getKebabName());
     }
 
     configureNsProj() {
 
         let src = this.templatePath('Ivy.Angular.Sample.njsproj-template');
-        let dst = this.destinationPath(this.getProjectName() + '.njsproj');
-
-        this.log('Template Path is ', src);
-        this.log('Destination Path is ', dst);
+        let dst = this.destinationPath(this.getIvyAngularName() + '.njsproj');
 
         this.fs.copyTpl(src, dst,
-            { name: this.options.name, moduleName: this.getModuleName() }
+            this.getReplacementParams()
         );
     }
 
-    configureProjectJson() {
+    configurePackageJson() {
 
         this.fs.copyTpl(
             this.templatePath('package.json'),
             this.destinationPath('package.json'),
-            { moduleName: this.getModuleName() }
+            this.getReplacementParams()
         );
     }
 
@@ -76,7 +95,7 @@ module.exports = class extends Generator {
         this.fs.copyTpl(
             this.templatePath('README.md'),
             this.destinationPath('README.md'),
-            { projectName: this.getProjectName() }
+            this.getReplacementParams()
         );
     }
 
@@ -93,20 +112,20 @@ module.exports = class extends Generator {
         this.fs.copyTpl(
             this.templatePath('index.ts'),
             this.destinationPath('index.ts'),
-            { name: this.options.name, moduleName: this.getModuleName() }
+            this.getReplacementParams()
         );
     }
 
     configureTypeScriptModule() {
 
-        let typeScriptModuleName = 'ivy.angular.' + this.getModuleName() + '.module.ts';
+        let typeScriptModuleName = 'ivy.angular.' + this.getKebabName() + '.module.ts';
 
         this.log('TS Module Name is: ', typeScriptModuleName);
 
         this.fs.copyTpl(
             this.templatePath('template.module.ts'),
             this.destinationPath(typeScriptModuleName),
-            { name: this.options.name }
+            this.getReplacementParams()
         );
     }
 
@@ -180,7 +199,9 @@ module.exports = class extends Generator {
 
             let materialRequirements = [
                 '@angular/material',
-                '@angular/cdk'
+                '@angular/cdk',
+                '@angular/forms',
+                '@angular/animations'
             ];
 
             this.yarnInstall(materialRequirements);

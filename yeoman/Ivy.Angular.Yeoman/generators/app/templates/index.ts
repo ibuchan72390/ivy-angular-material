@@ -1,5 +1,5 @@
 ﻿// Module
-export { IvyAngular<%= name %>Module } from './ivy.angular.<%= moduleName %>.module';
+export { IvyAngular<%= name %>Module } from './ivy.angular.<%= kebabName %>.module';
 
 
 

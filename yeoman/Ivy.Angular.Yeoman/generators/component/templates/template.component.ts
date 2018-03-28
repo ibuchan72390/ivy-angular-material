@@ -1,9 +1,11 @@
-﻿import { Component } from '@angular/core';
+﻿declare var require: any;
+
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'ivy-<%= moduleName %>',
-    templateUrl: './<%= moduleName %>.component.html'
+    selector: 'ivy-<%= kebabMaterialName %>',
+    templateUrl: './<%= kebabName %>.component.html'
 })
-export class <%= name %>Component {
+export class <%= materialName %>Component {
 
 }

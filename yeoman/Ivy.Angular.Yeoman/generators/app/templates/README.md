@@ -1,3 +1,3 @@
-﻿# <%= projectName %>
+﻿# Ivy.Angular.<%= dotName %>
 
 

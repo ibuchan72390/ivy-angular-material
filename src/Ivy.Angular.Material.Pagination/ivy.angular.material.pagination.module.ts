@@ -5,15 +5,17 @@ import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { MatSelectModule, MatOptionModule, MatInputModule, MatIconModule, MatToolbarModule, MatCardModule } from '@angular/material';
+import { MatSelectModule, MatOptionModule, MatInputModule, MatIconModule, MatToolbarModule, MatCardModule, MatButtonModule, MatProgressSpinnerModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { IvyAngularMaterialLoadingSpinnerModule } from 'ivy.angular.material.loading-spinner';
+
 // Components
-import { PaginatedListComponent } from './src/Components/PaginatedList/paginated-list.component';
+import { MaterialPaginatedListComponent } from './src/Components/PaginatedList/paginated-list.component';
 
 // Service Collection
 let declarations: any[] = [
-    PaginatedListComponent,
+    MaterialPaginatedListComponent
 ];
 
 
@@ -29,8 +31,12 @@ let declarations: any[] = [
         MatIconModule,
         MatToolbarModule,
         MatCardModule,
+        MatButtonModule,
+        MatProgressSpinnerModule,
 
-        FlexLayoutModule
+        FlexLayoutModule,
+
+        IvyAngularMaterialLoadingSpinnerModule
     ],
     declarations: declarations,
     exports: declarations

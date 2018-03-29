@@ -1,6 +1,7 @@
 ﻿import 'jasmine';
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { IvyAngularMaterialPaginationModule } from '../ivy.angular.material.pagination.module';
 
@@ -21,7 +22,8 @@ describe('PaginatedListComponent', () => {
 
         TestBed.configureTestingModule({
             imports: [
-                IvyAngularMaterialPaginationModule
+                IvyAngularMaterialPaginationModule,
+                BrowserAnimationsModule
             ]
         });
 
@@ -44,6 +46,33 @@ describe('PaginatedListComponent', () => {
 
         expect(sut.response).toBe(null);
         expect(req).not.toBe(null);
+    });
+
+    it('progressSpinner is visible while response == null', () => {
+
+        sut.response = null;
+
+        fixture.detectChanges();
+
+        let progSpinner = fixture.debugElement.nativeElement.querySelector('ivy-loading-spinner');
+
+        expect(progSpinner).not.toBe(null);
+
+        sut.response = new BasePaginatedResponse();
+
+        fixture.detectChanges();
+
+        progSpinner = fixture.debugElement.nativeElement.querySelector('ivy-loading-spinner');
+
+        expect(progSpinner).toBe(null);
+
+        sut.response = null;
+
+        fixture.detectChanges();
+
+        progSpinner = fixture.debugElement.nativeElement.querySelector('ivy-loading-spinner');
+
+        expect(progSpinner).not.toBe(null);
     });
 
 

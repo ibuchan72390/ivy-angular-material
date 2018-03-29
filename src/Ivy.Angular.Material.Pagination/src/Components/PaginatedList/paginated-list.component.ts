@@ -7,13 +7,13 @@ import { Observable } from 'rxjs';
 import { PaginatedRequest, BasePaginatedResponse } from 'ivy.angular.data';
 
 @Component({
-    selector: 'ivy-paginated-list',
+    selector: 'ivy-material-paginated-list',
     templateUrl: './paginated-list.component.html',
     styles: [
        `./paginated-list.component.css`
     ]
 })
-export class PaginatedListComponent implements OnInit {
+export class MaterialPaginatedListComponent implements OnInit {
 
     pageCounts: number[] = [5, 10, 25, 50, 100];
 

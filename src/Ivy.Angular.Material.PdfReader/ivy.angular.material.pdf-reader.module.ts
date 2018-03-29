@@ -3,7 +3,8 @@
 // Angular
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
-import { MatSlideToggleModule, MatIconModule, MatInputModule, MatProgressSpinnerModule } from '@angular/material';
+import { MatSlideToggleModule, MatIconModule, MatInputModule, MatProgressSpinnerModule, MatButtonModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { FormsModule } from '@angular/forms';
@@ -21,6 +22,9 @@ let imports: any[] = [
     MatSlideToggleModule,
     MatIconModule,
     MatInputModule,
+    MatButtonModule,
+
+    FlexLayoutModule,
 
     PdfViewerModule
 ];

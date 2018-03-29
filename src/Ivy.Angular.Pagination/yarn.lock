@@ -3901,14 +3901,15 @@ ivy.angular.test-helpers@^1.0.1:
     typescript "^2.7.2"
     zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
 
-ivy.angular.value-helpers@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.4.tgz#2b4de88bf298cc1d50b701e2c956a4165335d240"
+ivy.angular.value-helpers@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.10.tgz#b97fb81478ba8cc2a9341bd26446fa995d69f85c"
   dependencies:
     "@angular/core" "^5.2.9"
     ivy.angular.data "^1.0.1"
+    jasmine-core "^3.1.0"
     rxjs "^5.5.6"
-    zone.js "^0.8.20"
+    zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
 
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"
@@ -7689,6 +7690,6 @@ yeoman-generator@^2.0.3:
     through2 "^2.0.0"
     yeoman-environment "^2.0.5"
 
-zone.js@^0.8.20, "zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
+"zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
   version "0.8.20"
   resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"

@@ -1,0 +1,27 @@
+{
+  "stats": {
+    "tests": 3,
+    "passes": 3,
+    "failures": 0,
+    "duration": 0
+  },
+  "failures": [],
+  "passes": [
+    {
+      "title": "AnimationHelper genSlideLeft executes as expected",
+      "fullTitle": "AnimationHelper",
+      "duration": null
+    },
+    {
+      "title": "AnimationHelper genCollapse executes as expected",
+      "fullTitle": "AnimationHelper",
+      "duration": null
+    },
+    {
+      "title": "AnimationHelper genSlideRight executes as expected",
+      "fullTitle": "AnimationHelper",
+      "duration": null
+    }
+  ],
+  "skipped": []
+}

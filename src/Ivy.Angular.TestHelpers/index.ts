@@ -1,1 +1,0 @@
-﻿export { configureWebTests } from './src/tests.web.configure';

@@ -36,7 +36,6 @@
   <ItemGroup>
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="tsconfig.test.json" />
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>

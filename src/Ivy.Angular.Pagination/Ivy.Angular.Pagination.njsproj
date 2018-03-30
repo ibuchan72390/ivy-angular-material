@@ -33,7 +33,6 @@
     <Content Include="README.md" />
     <Content Include="src\Components\ScrollingLoad\scrolling-load.component.html" />
     <Content Include="tsconfig.json" />
-    <Content Include="tsconfig.test.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\Components\" />

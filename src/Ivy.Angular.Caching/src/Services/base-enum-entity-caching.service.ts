@@ -17,17 +17,17 @@ export abstract class BaseEnumEntityCachingService<TEntity extends BaseEnumEntit
     }
 
 
-    getConfigFromCollection(coll: TEntity[], key: string): TEntity {
-
-        return this.collSvc.getEnumEntityByName(coll, key);
-    }
+    // This is a fucking stupid wrapper for collSvc.getEnumEntityByName()
+    //getConfigFromCollection(coll: TEntity[], key: string): TEntity {
+    //    return this.collSvc.getEnumEntityByName(coll, key);
+    //}
 
     getCachedConfig(key: string): Observable<TEntity> {
 
         return Observable.create((observer: Observer<TEntity>) => {
             this.getCache().subscribe(
                 (cache: TEntity[]) => {
-                    observer.next(this.getConfigFromCollection(cache, key));
+                    observer.next(this.collSvc.getEnumEntityByName(cache, key));
                     observer.complete();
                 }
             );

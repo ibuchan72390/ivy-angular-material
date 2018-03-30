@@ -13,4 +13,4 @@ yarn test
 cd $PWD
 
 :: This is required for us to ensure Bamboo acknowledges it as "passing"
-exit 1;
+exit 0

@@ -180,6 +180,7 @@ module.exports = class extends Generator {
             'jasmine',
             'jasmine-core',
             'karma',
+            'karma-bamboo-reporter',
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-phantomjs-launcher',

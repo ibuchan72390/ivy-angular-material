@@ -47,8 +47,10 @@
     <Folder Include="generators\app\templates\" />
     <Folder Include="generators\component\" />
     <Folder Include="generators\component\templates\" />
+    <Folder Include="generators\directive\templates\" />
     <Folder Include="generators\guard\" />
     <Folder Include="generators\guard\templates\" />
+    <Folder Include="generators\directive\" />
     <Folder Include="generators\pipe\" />
     <Folder Include="generators\pipe\templates\" />
     <Folder Include="generators\service\" />
@@ -63,6 +65,7 @@
     <Compile Include="generators\component\index.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="generators\directive\index.js" />
     <Compile Include="generators\guard\index.js" />
     <Compile Include="generators\pipe\index.js" />
     <Compile Include="generators\service\index.js" />

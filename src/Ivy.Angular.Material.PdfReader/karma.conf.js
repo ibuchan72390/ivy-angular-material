@@ -60,7 +60,9 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox', 'PhantomJS'],     // Local Testing
+    //browsers: ['Chrome', 'Firefox', 'PhantomJS'],     // Local Testing
+    //browsers: ['Chrome'],                             // Debugging
+    browsers: ['PhantomJS'],                          // Committed for CI
     
     // Required for PhantomJS - the standard 10000ms is not enough
     browserNoActivityTimeout: 100000,

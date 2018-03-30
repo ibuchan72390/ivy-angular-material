@@ -1,5 +1,7 @@
-// Karma configuration
-// Generated on Wed Mar 14 2018 15:19:36 GMT-0700 (US Mountain Standard Time)
+const webpackConfig = require('./webpack.config')();
+
+delete webpackConfig.entry;
+
 
 module.exports = function(config) {
   config.set({
@@ -7,36 +9,36 @@ module.exports = function(config) {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
+    devtool: 'inline-source-map',
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine', 'karma-typescript'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'src/**/*.service.ts',
-      'test/*.spec.ts'
-    ],
 
-
-    // list of files / patterns to exclude
-    exclude: [
+        // My Files
+        'test/index.ts',
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'src/**/*.service.ts': ['karma-typescript'],
-        'test/*.spec.ts': ['karma-typescript']
+        'test/index.ts': ['webpack', 'sourcemap']
     },
 
+    // Required for Firefox && Chrome
+    mime: {
+      'text/x-typescript': ['ts','tsx']
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'karma-typescript'],
+    reporters: ['progress', 'kjhtml'],
 
 
     // web server port
@@ -58,27 +60,21 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    //browsers: ['Chrome', 'Firefox', 'PhantomJS'],     // Local Testing
+    browsers: ['Chrome', 'Firefox', 'PhantomJS'],     // Local Testing
     //browsers: ['Chrome'],                             // Debugging
-    browsers: ['PhantomJS'],                            // Committed for CI
-
+    //browsers: ['PhantomJS'],                          // Committed for CI
+    
+    // Required for PhantomJS - the standard 10000ms is not enough
+    browserNoActivityTimeout: 100000,
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
+    singleRun: true,
 
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity,
 
-
-    karmaTypescriptConfig: {
-        tsconfig: './tsconfig.test.json',
-        bundlerOptions: {
-            transforms: [
-                require("karma-typescript-es6-transform")()
-            ]
-        }
-    }
+    webpack: webpackConfig
   })
 }

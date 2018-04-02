@@ -65,11 +65,13 @@ describe('MaterialPdfReaderComponent', () => {
 
         // Validate previousPage
         let prevButton = fixture.debugElement.nativeElement.querySelector('#prevButton').querySelector('span');
-        expect(prevButton.innerText).toBe(sut.previousPageText);
+        let prevContains = prevButton.innerText.indexOf(sut.previousPageText) > -1;
+        expect(prevContains).toBeTruthy();
 
         // Validate nextPage
         let nextButton = fixture.debugElement.nativeElement.querySelector('#nextButton').querySelector('span');
-        expect(nextButton.innerText).toBe(sut.nextPageText);
+        let nextContains = nextButton.innerText.indexOf(sut.nextPageText) > -1;
+        expect(nextContains).toBeTruthy();
 
         // Validate Page
         let pageInput = fixture.debugElement.nativeElement.querySelector('mat-form-field').querySelector('input');

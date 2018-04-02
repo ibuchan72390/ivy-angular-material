@@ -3867,6 +3867,12 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+karma-bamboo-reporter@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/karma-bamboo-reporter/-/karma-bamboo-reporter-0.1.2.tgz#7d877f4538cded6d93e86bd52069ef7bc663549d"
+  dependencies:
+    mkdirp "^0.5.1"
+
 karma-chrome-launcher@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/karma-chrome-launcher/-/karma-chrome-launcher-2.2.0.tgz#cf1b9d07136cc18fe239327d24654c3dbc368acf"
@@ -7209,10 +7215,6 @@ yeoman-generator@^2.0.3:
     through2 "^2.0.0"
     yeoman-environment "^2.0.5"
 
-zone.js@^0.8.20:
-  version "0.8.20"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.20.tgz#a218c48db09464b19ff6fc8f0d4bb5b1046e185d"
-
-"zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
+zone.js@^0.8.20, "zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
   version "0.8.20"
   resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"

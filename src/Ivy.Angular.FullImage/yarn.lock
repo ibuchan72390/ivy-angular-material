@@ -2633,6 +2633,12 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+karma-bamboo-reporter@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/karma-bamboo-reporter/-/karma-bamboo-reporter-0.1.2.tgz#7d877f4538cded6d93e86bd52069ef7bc663549d"
+  dependencies:
+    mkdirp "^0.5.1"
+
 karma-chrome-launcher@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/karma-chrome-launcher/-/karma-chrome-launcher-2.2.0.tgz#cf1b9d07136cc18fe239327d24654c3dbc368acf"

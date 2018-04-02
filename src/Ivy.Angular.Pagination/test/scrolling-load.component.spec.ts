@@ -25,7 +25,7 @@ describe('ScrollingLoadComponent', () => {
                  * However, we need the services for testing, so we include it in the config here
                  * This would represent the actual consuming app very closely
                  */
-                IvyValueHelpersModule.forRoot(),
+                IvyValueHelpersModule,
                 IvyAngularPaginationModule
             ]
         });

@@ -10,4 +10,4 @@ yarn test
 
 cd $PWD
 
-exit 1;
+exit 0;

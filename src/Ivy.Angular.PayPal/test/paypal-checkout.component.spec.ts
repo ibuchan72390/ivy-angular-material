@@ -1,5 +1,8 @@
 ﻿import 'jasmine';
 
+import { TestBed, ComponentFixture } from '@angular/core/testing';
+import { IvyPayPalModule } from '../ivy.paypal.module';
+
 import { PayPalHelperService } from '../src/Services/paypal-helper.service';
 
 import { PayPalCheckoutConfig } from '../src/Models/paypal-checkout-config.model';
@@ -8,50 +11,60 @@ import { PayPalCheckoutComponent } from '../src/Components/paypal-checkout.compo
 
 describe('PayPalCheckoutComponent', () => {
 
-    let svc: PayPalHelperService;
+    let fixture: ComponentFixture<PayPalCheckoutComponent>;
     let sut: PayPalCheckoutComponent;
+    let svc: PayPalHelperService;
 
     beforeEach(() => {
-        this.svc = new PayPalHelperService();
-        this.sut = new PayPalCheckoutComponent(this.svc);
+
+        TestBed.configureTestingModule({
+            imports: [
+                IvyPayPalModule
+            ],
+        });
+
+        fixture = TestBed.createComponent(PayPalCheckoutComponent);
+        sut = fixture.componentInstance;
+
+        svc = TestBed.get(PayPalHelperService);
     });
 
     it('afterViewInit errors if paypalsvc init', () => {
 
-        spyOn(this.svc, 'init').and.returnValue(false);
-        spyOn(this.svc, 'createButton');
+        spyOn(svc, 'init').and.returnValue(false);
+        spyOn(svc, 'createButton');
 
-        expect(() => this.sut.ngAfterViewInit()).
+        expect(() => sut.ngAfterViewInit()).
             toThrowError('paypal is undefined! Make sure you\'ve ' +
                     'included the checkout.js script tag in your header!');
 
-        expect(this.svc.init).toHaveBeenCalled();
-        expect(this.svc.createButton).not.toHaveBeenCalled();
+        expect(svc.init).toHaveBeenCalled();
+        expect(svc.createButton).not.toHaveBeenCalled();
     });
 
     it('afterViewInit errors if config not init', () => {
 
-        spyOn(this.svc, 'init').and.returnValue(true);
-        spyOn(this.svc, 'createButton');
+        spyOn(svc, 'init').and.returnValue(true);
+        spyOn(svc, 'createButton');
 
-        expect(() => this.sut.ngAfterViewInit()).
+        expect(() => sut.ngAfterViewInit()).
             toThrowError('PayPalCheckoutConfig is required for paypal checkout component!');
 
-        expect(this.svc.init).toHaveBeenCalled();
-        expect(this.svc.createButton).not.toHaveBeenCalled();
+        expect(svc.init).toHaveBeenCalled();
+        expect(svc.createButton).not.toHaveBeenCalled();
     });
 
     it('afterViewInit creates button if all properties ready', () => {
 
-        spyOn(this.svc, 'init').and.returnValue(true);
-        spyOn(this.svc, 'createButton');
+        spyOn(svc, 'init').and.returnValue(true);
+        spyOn(svc, 'createButton');
 
-        this.sut.config = new PayPalCheckoutConfig();
+        sut.config = new PayPalCheckoutConfig();
 
-        this.sut.ngAfterViewInit();
+        sut.ngAfterViewInit();
 
-        expect(this.svc.init).toHaveBeenCalled();
-        expect(this.svc.createButton).toHaveBeenCalled();
+        expect(svc.init).toHaveBeenCalled();
+        expect(svc.createButton).toHaveBeenCalled();
     });
 
 });

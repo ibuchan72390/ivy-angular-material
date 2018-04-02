@@ -68,6 +68,15 @@ module.exports = () => {
                     'version': JSON.stringify('none')
                 }
             }),
+
+
+            /*
+             * Typescript source files will not be included without this plugin
+             */
+            new webpack.SourceMapDevToolPlugin({
+                filename: null, // if no value is provided the sourcemap is inlined
+                test: /\.(ts|js)($|\?)/i // process .js and .ts files only
+            })
         ],
 
 

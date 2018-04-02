@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IvyCollapsiblePanelModule } from '../ivy.angular.collapsible-panel.module';
+import { IvyAngularCollapsiblePanelModule } from '../ivy.angular.collapsible-panel.module';
 
 import { CollapsiblePanelComponent } from '../src/Components/CollapsiblePanel/collapsible-panel.component';
 
@@ -21,7 +21,7 @@ describe('CollapsiblePanelComponent', () => {
         TestBed.configureTestingModule({
             imports: [
                 BrowserAnimationsModule,
-                IvyCollapsiblePanelModule
+                IvyAngularCollapsiblePanelModule
             ]
         });
 

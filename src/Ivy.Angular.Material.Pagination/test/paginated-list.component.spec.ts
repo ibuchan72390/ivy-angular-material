@@ -7,14 +7,14 @@ import { IvyAngularMaterialPaginationModule } from '../ivy.angular.material.pagi
 
 import { PaginatedRequest, BasePaginatedResponse } from 'ivy.angular.data';
 
-import { PaginatedListComponent } from '../src/Components/PaginatedList/paginated-list.component';
+import { MaterialPaginatedListComponent } from '../src/Components/PaginatedList/paginated-list.component';
 
 
-describe('PaginatedListComponent', () => {
+describe('MaterialPaginatedListComponent', () => {
 
     // Variables & Constants
-    let fixture: ComponentFixture<PaginatedListComponent>;
-    let sut: PaginatedListComponent;
+    let fixture: ComponentFixture<MaterialPaginatedListComponent>;
+    let sut: MaterialPaginatedListComponent;
 
 
     // SetUp
@@ -27,7 +27,7 @@ describe('PaginatedListComponent', () => {
             ]
         });
 
-        fixture = TestBed.createComponent(PaginatedListComponent);
+        fixture = TestBed.createComponent(MaterialPaginatedListComponent);
         sut = fixture.componentInstance;
     });
 

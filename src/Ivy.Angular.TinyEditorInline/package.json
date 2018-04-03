@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.tiny-editor-inline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@angular/core": "^5.2.9",
     "core-js": "^2.5.4",
-    "ivy.angular.material.helpers": "^1.0.8",
+    "ivy.angular.material.helpers": "^1.0.9",
     "ivy.angular.value-helpers": "^1.0.10",
     "rxjs": "^5.5.8",
     "tinymce": "^4.7.9",

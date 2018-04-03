@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.tiny-editor-inline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -40,7 +40,7 @@
     "awesome-typescript-loader": "5.0.0-1",
     "css-loader": "^0.28.11",
     "html-loader": "^0.5.5",
-    "ivy.angular.web": "^1.0.8",
+    "ivy.angular.web": "^1.0.9",
     "jasmine": "^3.1.0",
     "jasmine-core": "^3.1.0",
     "karma": "^2.0.0",

@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.tiny-editor-inline",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",

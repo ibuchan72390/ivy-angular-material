@@ -159,7 +159,7 @@ module.exports = class extends Generator {
             '@angular/core',
             'rxjs',
             'core-js',
-            'zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist'
+            'zone.js'
         ];
 
         this.yarnInstall(projectRequirements);
@@ -196,8 +196,10 @@ module.exports = class extends Generator {
     }
 
     setupMaterialIfNecessary() {
+
         if (this.options.material) {
 
+            // I THINK some of these can possibly be devDependencies
             let materialRequirements = [
                 '@angular/material',
                 '@angular/cdk',

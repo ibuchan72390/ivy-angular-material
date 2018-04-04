@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.value-helpers",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Ivy Value Helpers for @angular",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -25,7 +25,10 @@
     "ivy.angular.data": "^1.0.1",
     "jasmine-core": "^3.1.0",
     "rxjs": "^5.5.6",
-    "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+    "zone.js": "^0.8.24"
+  },
+  "peerDependencies": {
+    "@angular/core": "^5.2.9"
   },
   "devDependencies": {
     "@angular/common": "^5.2.9",

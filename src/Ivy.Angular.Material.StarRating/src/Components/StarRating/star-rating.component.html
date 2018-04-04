@@ -1,0 +1,12 @@
+<div fxLayout="row"
+     fxLayoutAlign="space-between center"
+     (click)="touched()">
+
+    <mat-icon *ngFor="let index of getEnumerationArray()"
+              (click)="setValue(index)"
+              [color]="getIconColor()"
+              style="cursor: pointer">
+        {{getIconString(index)}}
+    </mat-icon>
+
+</div>

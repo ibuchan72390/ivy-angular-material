@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.dynamic-i-frame",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -23,11 +23,16 @@
   "dependencies": {
     "@angular/core": "^5.2.9",
     "core-js": "^2.5.4",
-    "ivy.angular.value-helpers": "^1.0.10",
-    "ivy.angular.web": "^1.0.9",
+    "ivy.angular.value-helpers": "1.0.11",
+    "ivy.angular.web": "1.0.11",
     "ng2-device-detector": "^1.0.1",
     "rxjs": "^5.5.7",
     "zone.js": "^0.8.24"
+  },
+  "peerDependencies": {
+    "@angular/core": "^5.2.9",
+    "ivy.angular.value-helpers": "1.0.11",
+    "ivy.angular.web": "1.0.11"
   },
   "devDependencies": {
     "@angular/common": "^5.2.9",

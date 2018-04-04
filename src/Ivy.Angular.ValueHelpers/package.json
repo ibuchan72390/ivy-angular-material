@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.value-helpers",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Ivy Value Helpers for @angular",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -22,13 +22,13 @@
   },
   "dependencies": {
     "@angular/core": "^5.2.9",
-    "ivy.angular.data": "^1.0.1",
-    "jasmine-core": "^3.1.0",
+    "ivy.angular.data": "1.0.2",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.24"
   },
   "peerDependencies": {
-    "@angular/core": "^5.2.9"
+    "@angular/core": "^5.2.9",
+    "ivy.angular.data": "1.0.2"
   },
   "devDependencies": {
     "@angular/common": "^5.2.9",
@@ -42,6 +42,7 @@
     "css-loader": "^0.28.11",
     "html-loader": "^0.5.5",
     "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0",
     "karma": "^2.0.0",
     "karma-bamboo-reporter": "^0.1.2",
     "karma-chrome-launcher": "^2.2.0",

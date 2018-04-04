@@ -27,7 +27,7 @@
     "ivy.angular.web": "^1.0.9",
     "ng2-device-detector": "^1.0.1",
     "rxjs": "^5.5.7",
-    "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+    "zone.js": "^0.8.24"
   },
   "devDependencies": {
     "@angular/common": "^5.2.9",

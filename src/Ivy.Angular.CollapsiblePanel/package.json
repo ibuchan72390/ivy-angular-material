@@ -24,7 +24,7 @@
     "@angular/core": "^5.2.9",
     "ivy.angular.animation-helpers": "^1.0.2",
     "rxjs": "^5.5.7",
-    "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+    "zone.js": "^0.8.24"
   },
   "devDependencies": {
     "@angular/common": "^5.2.9",

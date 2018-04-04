@@ -7696,6 +7696,10 @@ yeoman-generator@^2.0.3:
     through2 "^2.0.0"
     yeoman-environment "^2.0.5"
 
+zone.js@^0.8.24:
+  version "0.8.25"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.25.tgz#e20e5e85b881e2e66352612b5f238e8309e5badd"
+
 "zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
   version "0.8.20"
   resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"

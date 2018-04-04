@@ -27,7 +27,7 @@
     "ivy.angular.material.helpers": "^1.0.8",
     "ivy.angular.value-helpers": "^1.0.9",
     "rxjs": "^5.5.8",
-    "zone.js": "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+    "zone.js": "^0.8.24"
   },
   "devDependencies": {
     "@angular/compiler": "^5.2.9",

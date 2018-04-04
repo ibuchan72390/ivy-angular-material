@@ -5,13 +5,15 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { MatIconModule, MatIcon } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialStarRatingComponent } from './src/Components/StarRating/star-rating.component';
 
 // Service Collection
 let imports: any[] = [
     CommonModule,
-    MatIconModule
+    MatIconModule,
+    FlexLayoutModule
 ];
 
 let providers: any[] = [

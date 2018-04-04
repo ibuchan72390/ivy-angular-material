@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.dragging-sort-order",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -24,10 +24,15 @@
     "@angular/core": "^5.2.9",
     "@angular/forms": "^5.2.9",
     "core-js": "^2.5.4",
-    "ivy.angular.data": "^1.0.2",
+    "ivy.angular.data": "1.0.2",
     "ng2-dragula": "^1.5.0",
     "rxjs": "^5.5.8",
     "zone.js": "^0.8.24"
+  },
+  "peerDependencies": {
+    "@angular/core": "^5.2.9",
+    "@angular/forms": "^5.2.9",
+    "ivy.angular.data": "1.0.2"
   },
   "devDependencies": {
     "@angular/common": "^5.2.9",

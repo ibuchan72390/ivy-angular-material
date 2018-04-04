@@ -1,6 +1,6 @@
 {
   "name": "generator-ivy-angular",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A yeoman generator for working with the Ivy C# Framework's corresponding Angular libraries.",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",

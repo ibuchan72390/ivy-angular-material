@@ -7,9 +7,20 @@ export { IvyAngular<%= name %>Module } from './ivy.angular.<%= kebabName %>.modu
 
 
 
+
+// Directives
+
+
+
+
 // Services
 
 
 
 
 // Pipes
+
+
+
+
+// Models

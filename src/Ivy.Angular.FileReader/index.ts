@@ -8,7 +8,7 @@ export { IvyAngularFileReaderModule } from './ivy.angular.file-reader.module';
 
 
 // Services
-
+export { FileReaderService } from './src/Services/file-reader.service';
 
 
 

@@ -1,0 +1,51 @@
+<div style="width: 100%;"
+     fxLayoutAlign="center center">
+
+    <vg-player (onPlayerReady)="onPlayerReady($event)"
+               style="max-width: 1000px;">
+
+        <vg-overlay-play></vg-overlay-play>
+        <vg-buffering></vg-buffering>
+
+        <vg-scrub-bar>
+            <vg-scrub-bar-current-time [vgSlider]="true"></vg-scrub-bar-current-time>
+            <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+        </vg-scrub-bar>
+
+        <vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
+            <vg-play-pause></vg-play-pause>
+            <vg-playback-button></vg-playback-button>
+
+            <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+
+            <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+
+            <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
+            <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+
+            <vg-mute></vg-mute>
+            <vg-volume></vg-volume>
+
+
+            <!--
+                We may want to find a way to toggle the full-screen visibility on mobile devices.
+                It appears that this isn't 100% functional in the Videogular library with mobile
+                devices, so we can just prevent the functionality if mobile.
+            -->
+            <vg-fullscreen></vg-fullscreen>
+
+        </vg-controls>
+
+        <video [vgMedia]="media"
+               iam-video-player
+               #media
+               id="singleVideo"
+               preload="auto"
+               crossorigin="true"
+               (loadeddata)="onLoadEvent($event)">
+            <source *ngFor="let src of sources" [src]="src" type="video/mp4">
+        </video>
+
+    </vg-player>
+
+</div>

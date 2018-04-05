@@ -2539,6 +2539,16 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+ivy.angular.web@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.0.11.tgz#8709094659f312da5c647bcf7a89134c380c3688"
+  dependencies:
+    "@angular/common" "^5.2.9"
+    "@angular/core" "^5.2.9"
+    ng2-device-detector "^1.0.1"
+    rxjs "^5.5.6"
+    zone.js "^0.8.24"
+
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.1.0.tgz#a4785e135d5df65024dfc9224953df585bd2766c"
@@ -3141,6 +3151,10 @@ neo-async@^2.5.0:
 netmask@~1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
+
+ng2-device-detector@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ng2-device-detector/-/ng2-device-detector-1.0.1.tgz#5abbc6380eac8b265f7dded9451a2672c18c8eaf"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -4275,7 +4289,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^5.5.8:
+rxjs@^5.5.6, rxjs@^5.5.8:
   version "5.5.8"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.8.tgz#b2b0809a57614ad6254c03d7446dea0d83ca3791"
   dependencies:

@@ -28,6 +28,12 @@ describe('VideoPlayerComponent', () => {
 
 
     // Tests
-    //it('Sample Test', () => {
+    //it('Video renders input sources as source elements', () => {
+    //});
+
+    //it('Video bubbles loadeddata event through the component', () => {
+    //});
+
+    //it('VgPlayer bubbles onPlayerReady event through the component', () => {
     //});
 });

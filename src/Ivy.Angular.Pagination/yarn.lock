@@ -3901,15 +3901,15 @@ ivy.angular.test-helpers@^1.0.1:
     typescript "^2.7.2"
     zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
 
-ivy.angular.value-helpers@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.10.tgz#b97fb81478ba8cc2a9341bd26446fa995d69f85c"
+ivy.angular.value-helpers@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.11.tgz#51bcd7c0a2d5d9f45059800bdb9f17a8bc4b227b"
   dependencies:
     "@angular/core" "^5.2.9"
     ivy.angular.data "^1.0.1"
     jasmine-core "^3.1.0"
     rxjs "^5.5.6"
-    zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+    zone.js "^0.8.24"
 
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"

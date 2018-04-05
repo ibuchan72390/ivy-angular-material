@@ -15,10 +15,9 @@
     "target": "es5"
   },
   "files": [
-    "index.ts",
-    "test/index.ts"
+    "index.ts"
   ],
   "exclude": [
-    "./node_modules"
+    "node_modules"
   ]
 }

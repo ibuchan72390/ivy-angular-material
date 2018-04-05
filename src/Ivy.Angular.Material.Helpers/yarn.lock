@@ -3706,15 +3706,15 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-ivy.angular.web@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.0.9.tgz#d77de6f230c69190ee80c7f3f59dfedb7a19243f"
+ivy.angular.web@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.0.11.tgz#8709094659f312da5c647bcf7a89134c380c3688"
   dependencies:
     "@angular/common" "^5.2.9"
     "@angular/core" "^5.2.9"
     ng2-device-detector "^1.0.1"
     rxjs "^5.5.6"
-    zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+    zone.js "^0.8.24"
 
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"
@@ -7256,7 +7256,3 @@ yeoman-generator@^2.0.3:
 zone.js@^0.8.24:
   version "0.8.25"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.25.tgz#e20e5e85b881e2e66352612b5f238e8309e5badd"
-
-"zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
-  version "0.8.20"
-  resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"

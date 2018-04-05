@@ -1,12 +1,13 @@
 ﻿import { NgModule } from '@angular/core';
 
 import { MatIconModule, MatInputModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { FileUploaderComponent } from './src/Components/FileUploader/file-uploader.component';
+import { MaterialFileUploaderComponent } from './src/Components/FileUploader/file-uploader.component';
 
 // Service Collection
 let declarations: any[] = [
-    FileUploaderComponent
+    MaterialFileUploaderComponent
 ];
 
 
@@ -14,7 +15,8 @@ let declarations: any[] = [
 @NgModule({
     imports: [
         MatIconModule,
-        MatInputModule
+        MatInputModule,
+        FlexLayoutModule
     ],
     declarations: declarations,
     exports: declarations

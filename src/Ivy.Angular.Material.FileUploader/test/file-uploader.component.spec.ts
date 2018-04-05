@@ -5,13 +5,13 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IvyAngularMaterialFileUploaderModule } from '../ivy.angular.material.file-uploader.module'
 
-import { FileUploaderComponent } from '../src/Components/FileUploader/file-uploader.component';
+import { MaterialFileUploaderComponent } from '../src/Components/FileUploader/file-uploader.component';
 
 describe('FileUploaderComponent', () => {
 
     // Variables
-    let fixture: ComponentFixture<FileUploaderComponent>;
-    let sut: FileUploaderComponent;
+    let fixture: ComponentFixture<MaterialFileUploaderComponent>;
+    let sut: MaterialFileUploaderComponent;
 
     // Setup
     beforeEach(() => {
@@ -23,7 +23,7 @@ describe('FileUploaderComponent', () => {
             ]
         });
 
-        fixture = TestBed.createComponent(FileUploaderComponent);
+        fixture = TestBed.createComponent(MaterialFileUploaderComponent);
         sut = fixture.componentInstance;
     });
 

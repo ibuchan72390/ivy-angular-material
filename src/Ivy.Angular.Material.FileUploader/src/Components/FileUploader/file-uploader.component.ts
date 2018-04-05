@@ -3,7 +3,7 @@
 import { Component, Output, Input, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: 'ivy-file-uploader',
+    selector: 'ivy-material-file-uploader',
     templateUrl: './file-uploader.component.html',
     styles: [`
 
@@ -19,7 +19,7 @@ input[type="file"] {
 
 `]
 })
-export class FileUploaderComponent {
+export class MaterialFileUploaderComponent {
 
     /*
      * We have a couple of options here that we can do...

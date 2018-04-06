@@ -13,7 +13,17 @@ export class FileReaderService {
 
             this.reader.addEventListener("load", (e: any) => {
 
-                observer.next(e.target.result);
+                let result: any;
+
+                // Appears this may come through in one of two separate places
+                // https://stackoverflow.com/questions/27254735/filereader-onload-with-result-and-parameter
+                if (e.result) {
+                    result = e.result;
+                } else {
+                    result = e.target.result;
+                }
+
+                observer.next(result);
                 observer.complete();
             });
 

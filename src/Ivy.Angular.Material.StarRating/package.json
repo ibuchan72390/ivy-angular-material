@@ -7,7 +7,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+    "url": "https://github.com/ibuchan72390/ivy-angular-material.git"
   },
   "scripts": {
     "test": "karma start ./karma.conf.js",

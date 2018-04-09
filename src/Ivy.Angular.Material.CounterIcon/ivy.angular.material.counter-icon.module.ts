@@ -6,11 +6,14 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { MaterialCounterIconComponent } from './src/Components/CounterIcon/counter-icon.component';
 
 // Service Collection
 let imports: any[] = [
     CommonModule,
+    FlexLayoutModule,
     MatIconModule
 ];
 

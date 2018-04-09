@@ -2531,14 +2531,14 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-ivy.angular.animation-helpers@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/ivy.angular.animation-helpers/-/ivy.angular.animation-helpers-1.0.2.tgz#738c5ffe5b9d6f70246bd8d78b6e449af9d05cf7"
+ivy.angular.animation-helpers@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/ivy.angular.animation-helpers/-/ivy.angular.animation-helpers-1.0.4.tgz#1b205924f64501e48a4b6eb8fc0643d224b6417d"
   dependencies:
     "@angular/animations" "^5.2.9"
     "@angular/core" "^5.2.9"
     rxjs "^5.5.7"
-    zone.js "^0.8.20"
+    zone.js "^0.8.24"
 
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"
@@ -5189,6 +5189,6 @@ yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
-zone.js@^0.8.20, "zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
-  version "0.8.20"
-  resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"
+zone.js@^0.8.24:
+  version "0.8.26"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.26.tgz#7bdd72f7668c5a7ad6b118148b4ea39c59d08d2d"

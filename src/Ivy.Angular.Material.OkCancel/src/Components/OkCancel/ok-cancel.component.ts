@@ -10,7 +10,7 @@ import { AnimationHelper } from 'ivy.angular.animation-helpers';
     selector: 'ivy-material-ok-cancel',
     templateUrl: './ok-cancel.component.html',
     animations: [
-        AnimationHelper.genSlideLeft('slideLeft', 500)
+        AnimationHelper.genSlideLeftHide('slideLeft', 500)
     ]
 })
 export class MaterialOkCancelComponent {

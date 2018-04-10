@@ -36,7 +36,6 @@
     <Content Include="karma.conf.js" />
     <Content Include="ivy.angular.material.sized-icon.module.ts" />
     <Content Include="webpack.config.js" />
-    <Content Include="src\Components\SizedIcon\sized-icon.component.html" />
     <Content Include="src/**/**/*.css" />
     <Content Include="src/**/**/*.ts" />
     <Content Include="src/**/*.ts" />

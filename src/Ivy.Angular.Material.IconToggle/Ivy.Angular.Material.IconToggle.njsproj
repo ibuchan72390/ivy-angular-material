@@ -51,6 +51,7 @@
     <Folder Include="src\Components\" />
     <Folder Include="src\Components\DeleteRestore\" />
     <Folder Include="src\Components\ExpandCollapse\" />
+    <Folder Include="src\Components\CheckboxToggle\" />
     <Folder Include="test\" />
   </ItemGroup>
   <ItemGroup>
@@ -58,8 +59,12 @@
     <Compile Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\Components\CheckboxToggle\checkbox-toggle.component.ts" />
     <TypeScriptCompile Include="src\Components\DeleteRestore\delete-restore.component.ts" />
     <TypeScriptCompile Include="src\Components\ExpandCollapse\expand-collapse.component.ts" />
+    <TypeScriptCompile Include="test\checkbox-toggle.component.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="test\delete-restore.component.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>

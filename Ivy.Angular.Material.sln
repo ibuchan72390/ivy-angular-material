@@ -31,6 +31,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.YesNoN
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.IconToggle", "src\Ivy.Angular.Material.IconToggle\Ivy.Angular.Material.IconToggle.njsproj", "{7ECEC564-740D-46C7-B139-207112B88F83}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.SizedMaterialIcon", "src\Ivy.Angular.Material.SizedMaterialIcon\Ivy.Angular.Material.SizedMaterialIcon.njsproj", "{5E43F23B-3520-446E-B4E6-7178551A4C02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{7ECEC564-740D-46C7-B139-207112B88F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ECEC564-740D-46C7-B139-207112B88F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ECEC564-740D-46C7-B139-207112B88F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E43F23B-3520-446E-B4E6-7178551A4C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E43F23B-3520-446E-B4E6-7178551A4C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E43F23B-3520-446E-B4E6-7178551A4C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E43F23B-3520-446E-B4E6-7178551A4C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{4B29B34E-17DB-48C5-B9FB-52860B0EF322} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{6AA51790-6F4F-40C6-86C0-15AAA1664FFF} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{7ECEC564-740D-46C7-B139-207112B88F83} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
+		{5E43F23B-3520-446E-B4E6-7178551A4C02} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {179B2D41-C7AA-49E0-AE4D-2F5AA4B6D9E7}

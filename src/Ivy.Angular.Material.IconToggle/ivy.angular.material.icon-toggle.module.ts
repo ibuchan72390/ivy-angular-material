@@ -4,7 +4,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatButtonModule } from '@angular/material';
 
 import { IvyAngularMaterialDeleteRestoreComponent } from './src/Components/DeleteRestore/delete-restore.component';
 import { IvyAngularMaterialExpandCollapseComponent } from './src/Components/ExpandCollapse/expand-collapse.component';
@@ -13,7 +13,8 @@ import { IvyAngularMaterialExpandCollapseComponent } from './src/Components/Expa
 // Service Collection
 let imports: any[] = [
     CommonModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
 ];
 
 let providers: any[] = [

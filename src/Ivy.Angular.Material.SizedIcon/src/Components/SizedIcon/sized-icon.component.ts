@@ -5,6 +5,8 @@ import { Component, Input } from '@angular/core';
 /**
  * This seems stupid, but sizing these damn things does not properly "size" them because of the inherent styling of the height and width
  * We need to set the size, the height, and the width all in order to ensure it renders correctly
+ * 
+ * There's a chance we may need to account for some spacing on items when the size is below the default 24px
  */
 
 @Component({

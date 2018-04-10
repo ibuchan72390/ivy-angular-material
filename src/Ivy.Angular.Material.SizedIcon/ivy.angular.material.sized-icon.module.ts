@@ -21,5 +21,5 @@ let declarations: any[] = [
     declarations: declarations,
     exports: declarations
 })
-export class IvyAngularMaterialSizedMaterialIconModule {
+export class IvyAngularMaterialSizedIconModule {
 }

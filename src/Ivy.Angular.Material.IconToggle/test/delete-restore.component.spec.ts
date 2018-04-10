@@ -38,14 +38,15 @@ describe('IvyAngularMaterialDeleteRestoreComponent', () => {
 
         let iconElem = fixture.debugElement.query(By.directive(MatIcon));
 
-        expect(iconElem.nativeElement.innerText).toBe('delete');
+        // Need to do innerText.trim() because PhantomJS is including a space in front
+        expect(iconElem.nativeElement.innerText.trim()).toBe('delete');
     });
 
     it('DeleteRestore renders the restore icon after click', () => {
 
         let iconElem = fixture.debugElement.query(By.directive(MatIcon));
 
-        expect(iconElem.nativeElement.innerText).toBe('delete');
+        expect(iconElem.nativeElement.innerText.trim()).toBe('delete');
 
         let iconBtn = fixture.debugElement.children[0];
 
@@ -63,14 +64,14 @@ describe('IvyAngularMaterialDeleteRestoreComponent', () => {
 
         iconBtn = fixture.debugElement.children[0];
 
-        expect(iconBtn.nativeElement.innerText).toBe('refresh');
+        expect(iconBtn.nativeElement.innerText.trim()).toBe('refresh');
     });
 
     it('DeleteRestore renders the delete icon after clicking the restore icon', () => {
 
         let iconElem = fixture.debugElement.query(By.directive(MatIcon));
 
-        expect(iconElem.nativeElement.innerText).toBe('delete');
+        expect(iconElem.nativeElement.innerText.trim()).toBe('delete');
 
         let iconBtn = fixture.debugElement.children[0];
 
@@ -92,7 +93,7 @@ describe('IvyAngularMaterialDeleteRestoreComponent', () => {
 
         iconBtn = fixture.debugElement.children[0];
 
-        expect(iconBtn.nativeElement.innerText).toBe('refresh');
+        expect(iconBtn.nativeElement.innerText.trim()).toBe('refresh');
 
         iconBtn.triggerEventHandler('click', {});
 
@@ -104,6 +105,6 @@ describe('IvyAngularMaterialDeleteRestoreComponent', () => {
 
         iconBtn = fixture.debugElement.children[0];
 
-        expect(iconBtn.nativeElement.innerText).toBe('delete');
+        expect(iconBtn.nativeElement.innerText.trim()).toBe('delete');
     });
 });

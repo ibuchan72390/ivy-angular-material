@@ -1,0 +1,11 @@
+﻿<button mat-icon-button
+        (click)="onExpand.emit()"
+        *ngIf="isCollapsed">
+    <mat-icon>expand_more</mat-icon>
+</button>
+
+<button mat-icon-button
+        (click)="onCollapse.emit()"
+        *ngIf="!isCollapsed">
+    <mat-icon>expand_less</mat-icon>
+</button>

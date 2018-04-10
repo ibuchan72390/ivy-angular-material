@@ -4,7 +4,8 @@ export { IvyAngularMaterialIconToggleModule } from './ivy.angular.material.icon-
 
 
 // Components
-
+export { IvyAngularMaterialDeleteRestoreComponent } from './src/Components/DeleteRestore/delete-restore.component';
+export { IvyAngularMaterialExpandCollapseComponent } from './src/Components/ExpandCollapse/expand-collapse.component';
 
 
 

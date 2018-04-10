@@ -1,0 +1,11 @@
+﻿<button mat-icon-button
+        (click)="delete()"
+        *ngIf="!isDeleted">
+    <mat-icon>delete</mat-icon>
+</button>
+
+<button mat-icon-button
+        (click)="restore()"
+        *ngIf="isDeleted">
+    <mat-icon>refresh</mat-icon>
+</button>

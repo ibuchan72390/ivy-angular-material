@@ -4,7 +4,7 @@ export { IvyAngularMaterialSizedIconModule } from './ivy.angular.material.sized-
 
 
 // Components
-
+export { MaterialSizedIconComponent } from './src/Components/SizedIcon/sized-icon.component';
 
 
 

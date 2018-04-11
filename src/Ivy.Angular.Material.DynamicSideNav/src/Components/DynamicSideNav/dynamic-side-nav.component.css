@@ -1,22 +1,10 @@
 ﻿/*
     Jacked this from the material design sample website
     I think the shadow looks good on this piece
+
+    restrict to width 300 because it will work on all devices.
 */
 .custom-left-side-nav-style {
     box-shadow: 3px 0 6px rgba(0,0,0,.24);
+    width: 300px;
 }
-
-/*
-Original Style
-
-.custom-left-side-nav-style {
-    box-shadow: 3px 0 6px rgba(0,0,0,.24);
-    width: 275px;
-}
-
-.custom-left-side-nav-style button {
-    text-align: left;
-    width: 100%;
-}
-
-*/

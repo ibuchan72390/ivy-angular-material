@@ -32,6 +32,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/flex-layout@^5.0.0-beta.14":
+  version "5.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-5.0.0-beta.14.tgz#300e1cba2ef1a70f43fe7ea68ea78267cb4241e4"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/forms@^5.2.9":
   version "5.2.9"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.2.9.tgz#12c45b3a02c398b354f09cc740d914cd904c0c9c"
@@ -1072,7 +1078,7 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
-core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.5:
+core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.4, core-js@^2.5.5:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.5.tgz#b14dde936c640c0579a6b50cabcc132dd6127e3b"
 
@@ -2533,6 +2539,70 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+ivy.angular.data@1.0.2, ivy.angular.data@^1.0.1, ivy.angular.data@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
+
+ivy.angular.full-image@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ivy.angular.full-image/-/ivy.angular.full-image-1.0.1.tgz#7546b70c69e829382c031ec17723e8a9dd0f1be7"
+  dependencies:
+    "@angular/common" "^5.2.9"
+    "@angular/core" "^5.2.9"
+    core-js "^2.5.4"
+    ivy.angular.material.helpers "1.0.10"
+    ivy.angular.value-helpers "1.0.11"
+    rxjs "^5.5.8"
+    zone.js "^0.8.24"
+
+ivy.angular.material.helpers@1.0.10, ivy.angular.material.helpers@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/ivy.angular.material.helpers/-/ivy.angular.material.helpers-1.0.10.tgz#6c382caeff1745620919976fb6005e254370cf0c"
+  dependencies:
+    "@angular/common" "^5.2.9"
+    "@angular/core" "^5.2.9"
+    ivy.angular.web "1.0.11"
+    rxjs "^5.5.6"
+    zone.js "^0.8.24"
+
+ivy.angular.regex-validators@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ivy.angular.regex-validators/-/ivy.angular.regex-validators-1.0.0.tgz#bd2d15de04af0ec682c403ef70beab927e930378"
+  dependencies:
+    "@angular/core" "^5.2.9"
+    core-js "^2.5.5"
+    rxjs "^5.5.9"
+    zone.js "^0.8.26"
+
+ivy.angular.value-helpers@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.11.tgz#51bcd7c0a2d5d9f45059800bdb9f17a8bc4b227b"
+  dependencies:
+    "@angular/core" "^5.2.9"
+    ivy.angular.data "^1.0.1"
+    jasmine-core "^3.1.0"
+    rxjs "^5.5.6"
+    zone.js "^0.8.24"
+
+ivy.angular.value-helpers@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.13.tgz#a3f7fb9aa9bff8d3b6ddacff6d08c02913dd9e73"
+  dependencies:
+    "@angular/core" "^5.2.9"
+    ivy.angular.data "1.0.2"
+    rxjs "^5.5.6"
+    zone.js "^0.8.24"
+
+ivy.angular.web@1.0.11, ivy.angular.web@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.0.11.tgz#8709094659f312da5c647bcf7a89134c380c3688"
+  dependencies:
+    "@angular/common" "^5.2.9"
+    "@angular/core" "^5.2.9"
+    ng2-device-detector "^1.0.1"
+    rxjs "^5.5.6"
+    zone.js "^0.8.24"
+
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.1.0.tgz#a4785e135d5df65024dfc9224953df585bd2766c"
@@ -3135,6 +3205,10 @@ neo-async@^2.5.0:
 netmask@~1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
+
+ng2-device-detector@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ng2-device-detector/-/ng2-device-detector-1.0.1.tgz#5abbc6380eac8b265f7dded9451a2672c18c8eaf"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -4269,7 +4343,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^5.5.9:
+rxjs@^5.5.6, rxjs@^5.5.8, rxjs@^5.5.9:
   version "5.5.9"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.9.tgz#12a0487794b00f5eb370fec2751bd973a89886fb"
   dependencies:
@@ -5176,6 +5250,6 @@ yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
-zone.js@^0.8.26:
+zone.js@^0.8.24, zone.js@^0.8.26:
   version "0.8.26"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.26.tgz#7bdd72f7668c5a7ad6b118148b4ea39c59d08d2d"

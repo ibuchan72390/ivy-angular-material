@@ -1,1 +1,31 @@
-<h1>MaterialImageHrefInput</h1>
+<mat-form-field class="full-width">
+    
+    <input type="text"
+           matInput
+           (blur)="onBlur()"
+           (keyup)="onChange()"
+           [placeholder]="placeholder"
+           #hrefTextBox />
+
+</mat-form-field>
+
+<div fxLayout="row-reverse">
+
+    <mat-checkbox dir="rtl"
+                  [(ngModel)]="previewImage"
+                  [disabled]="previewDisabled()"
+                  [ngModelOptions]="{standalone: true}">
+        {{previewText}}
+    </mat-checkbox>
+
+</div>
+
+<div *ngIf="previewImage"
+     class="full-width"
+     fxLayoutAlign="center center">
+    
+    <ivy-full-image [src]="getCurrentValue()"
+                    style="background-color: white;">
+    </ivy-full-image>
+
+</div>

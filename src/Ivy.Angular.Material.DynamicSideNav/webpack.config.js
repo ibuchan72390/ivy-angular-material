@@ -49,7 +49,10 @@ module.exports = () => {
                 },
                 {
                     test: /\.css$/,
-                    use:   'css-loader'
+                    use: [
+                        { loader: 'to-string-loader' },
+                        { loader: 'css-loader' }
+                    ]
                 },
             ]
         },

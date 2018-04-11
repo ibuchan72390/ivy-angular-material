@@ -1,1 +1,14 @@
-<h1>DynamicSideNav</h1>
+<mat-sidenav-container fxFlexFill>
+
+    <mat-sidenav class="custom-left-side-nav-style"
+                 mode="{{getMode()}}"
+                 [opened]="isOpen()"
+                 (close)="onClose()">
+
+        <ng-content select="[side-nav-bar]"></ng-content>
+
+    </mat-sidenav>
+
+    <ng-content select="[side-nav-content]"></ng-content>
+
+</mat-sidenav-container>

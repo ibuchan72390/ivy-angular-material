@@ -4,7 +4,7 @@ export { IvyAngularMaterialDynamicSideNavModule } from './ivy.angular.material.d
 
 
 // Components
-
+export { MaterialDynamicSideNavComponent } from './src/Components/DynamicSideNav/dynamic-side-nav.component';
 
 
 
@@ -14,7 +14,7 @@ export { IvyAngularMaterialDynamicSideNavModule } from './ivy.angular.material.d
 
 
 // Services
-
+export { DynamicSideNavService } from './src/Services/dynamic-side-nav.service';
 
 
 

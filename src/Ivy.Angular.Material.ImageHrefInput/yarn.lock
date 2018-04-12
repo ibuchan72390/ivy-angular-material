@@ -347,9 +347,9 @@ autoprefixer@^6.3.1:
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
 
-awesome-typescript-loader@5.0.0-1:
-  version "5.0.0-1"
-  resolved "https://registry.yarnpkg.com/awesome-typescript-loader/-/awesome-typescript-loader-5.0.0-1.tgz#ab618ae4071f714825f0306871a0452fd1b347e8"
+awesome-typescript-loader@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/awesome-typescript-loader/-/awesome-typescript-loader-5.0.0.tgz#130c304ae52a60933f15d93f7629003b483fa8b1"
   dependencies:
     chalk "^2.3.1"
     enhanced-resolve "^4.0.0"
@@ -1078,7 +1078,7 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
-core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.4, core-js@^2.5.5:
+core-js@2.5.5, core-js@^2.2.0, core-js@^2.4.0, core-js@^2.5.4, core-js@^2.5.5:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.5.tgz#b14dde936c640c0579a6b50cabcc132dd6127e3b"
 
@@ -2539,23 +2539,25 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-ivy.angular.data@1.0.2, ivy.angular.data@^1.0.1, ivy.angular.data@^1.0.2:
+ivy.angular.data@1.0.2, ivy.angular.data@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
-ivy.angular.full-image@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ivy.angular.full-image/-/ivy.angular.full-image-1.0.1.tgz#7546b70c69e829382c031ec17723e8a9dd0f1be7"
+ivy.angular.full-image@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ivy.angular.full-image/-/ivy.angular.full-image-1.0.2.tgz#7b8599e485ecc1bd0541d9e0eecee39919f1568c"
   dependencies:
     "@angular/common" "^5.2.9"
     "@angular/core" "^5.2.9"
     core-js "^2.5.4"
-    ivy.angular.material.helpers "1.0.10"
-    ivy.angular.value-helpers "1.0.11"
+    ivy.angular.data "^1.0.2"
+    ivy.angular.material.helpers "^1.0.10"
+    ivy.angular.value-helpers "1.0.13"
+    ivy.angular.web "^1.0.11"
     rxjs "^5.5.8"
     zone.js "^0.8.24"
 
-ivy.angular.material.helpers@1.0.10, ivy.angular.material.helpers@^1.0.10:
+ivy.angular.material.helpers@^1.0.10:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/ivy.angular.material.helpers/-/ivy.angular.material.helpers-1.0.10.tgz#6c382caeff1745620919976fb6005e254370cf0c"
   dependencies:
@@ -2574,17 +2576,7 @@ ivy.angular.regex-validators@^1.0.0:
     rxjs "^5.5.9"
     zone.js "^0.8.26"
 
-ivy.angular.value-helpers@1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.11.tgz#51bcd7c0a2d5d9f45059800bdb9f17a8bc4b227b"
-  dependencies:
-    "@angular/core" "^5.2.9"
-    ivy.angular.data "^1.0.1"
-    jasmine-core "^3.1.0"
-    rxjs "^5.5.6"
-    zone.js "^0.8.24"
-
-ivy.angular.value-helpers@^1.0.13:
+ivy.angular.value-helpers@1.0.13, ivy.angular.value-helpers@^1.0.13:
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.13.tgz#a3f7fb9aa9bff8d3b6ddacff6d08c02913dd9e73"
   dependencies:
@@ -4829,6 +4821,10 @@ through2@^2.0.0:
 thunkify@~2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/thunkify/-/thunkify-2.1.2.tgz#faa0e9d230c51acc95ca13a361ac05ca7e04553d"
+
+time-fix-plugin@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/time-fix-plugin/-/time-fix-plugin-2.0.0.tgz#d112f1e415b6ed269e008a42990ddbf8053fc315"
 
 timers-browserify@^1.0.1:
   version "1.4.2"

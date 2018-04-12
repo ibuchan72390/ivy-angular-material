@@ -1,4 +1,5 @@
-﻿var webpack = require('webpack');
+var webpack = require('webpack');
+const TimeFixPlugin = require('time-fix-plugin');
 
 const env = 'TEST';
 
@@ -49,7 +50,10 @@ module.exports = () => {
                 },
                 {
                     test: /\.css$/,
-                    use:   'css-loader'
+                    use: [
+                        { loader: 'to-string-loader' },
+                        { loader: 'css-loader' }
+                    ]
                 },
             ]
         },
@@ -76,7 +80,9 @@ module.exports = () => {
             new webpack.SourceMapDevToolPlugin({
                 filename: null, // if no value is provided the sourcemap is inlined
                 test: /\.(ts|js)($|\?)/i // process .js and .ts files only
-            })
+            }),
+
+            new TimeFixPluign()
         ],
 
 

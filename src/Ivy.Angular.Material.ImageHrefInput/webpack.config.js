@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+﻿var webpack = require('webpack');
 
 const env = 'TEST';
 
@@ -68,7 +68,6 @@ module.exports = () => {
                     'version': JSON.stringify('none')
                 }
             }),
-
 
             /*
              * Typescript source files will not be included without this plugin

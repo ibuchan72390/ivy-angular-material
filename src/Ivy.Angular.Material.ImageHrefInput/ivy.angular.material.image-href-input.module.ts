@@ -6,7 +6,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { MatInputModule, MatCheckboxModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { FlexLayoutModule, Directive } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { IvyAngularFullImageModule } from 'ivy.angular.full-image';
 

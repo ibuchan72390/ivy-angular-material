@@ -2543,7 +2543,7 @@ ivy.angular.data@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
-ivy.angular.value-helpers@^1.0.11:
+ivy.angular.value-helpers@1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.11.tgz#51bcd7c0a2d5d9f45059800bdb9f17a8bc4b227b"
   dependencies:

@@ -3698,33 +3698,31 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-ivy.angular.data@^1.0.1, ivy.angular.data@^1.0.2:
+ivy.angular.data@1.0.2, ivy.angular.data@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
-ivy.angular.material.loading-spinner@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/ivy.angular.material.loading-spinner/-/ivy.angular.material.loading-spinner-1.0.9.tgz#ed2074633f37f3c2102227b2f11d2dcb396ccb85"
+ivy.angular.material.loading-spinner@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/ivy.angular.material.loading-spinner/-/ivy.angular.material.loading-spinner-1.0.10.tgz#89133d156d59fc42bacc635a7f4ec7aa50473c6c"
   dependencies:
-    "@angular/animations" "^5.2.9"
-    "@angular/cdk" "^5.2.4"
     "@angular/common" "^5.2.9"
     "@angular/core" "^5.2.9"
     "@angular/flex-layout" "^5.0.0-beta.13"
-    "@angular/forms" "^5.2.9"
     "@angular/material" "^5.2.4"
     core-js "^2.5.3"
     rxjs "^5.5.7"
-    zone.js "git://github.com/JiaLiPassion/zone.js#jasmine-dist"
+    zone.js "^0.8.24"
 
-ivy.angular.value-helpers@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.4.tgz#2b4de88bf298cc1d50b701e2c956a4165335d240"
+ivy.angular.value-helpers@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.11.tgz#51bcd7c0a2d5d9f45059800bdb9f17a8bc4b227b"
   dependencies:
     "@angular/core" "^5.2.9"
     ivy.angular.data "^1.0.1"
+    jasmine-core "^3.1.0"
     rxjs "^5.5.6"
-    zone.js "^0.8.20"
+    zone.js "^0.8.24"
 
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"
@@ -7214,10 +7212,6 @@ yeoman-generator@^2.0.3:
     text-table "^0.2.0"
     through2 "^2.0.0"
     yeoman-environment "^2.0.5"
-
-zone.js@^0.8.20, "zone.js@git://github.com/JiaLiPassion/zone.js#jasmine-dist":
-  version "0.8.20"
-  resolved "git://github.com/JiaLiPassion/zone.js#71bbace559c9f0f2010c03126e23f7af321080c6"
 
 zone.js@^0.8.24:
   version "0.8.25"

@@ -10,6 +10,6 @@ yarn test
 
 cd $OrigLocation
 
-chmod 777 ./test-proj.bash
+chmod 777 ./*
 
 exit 0;

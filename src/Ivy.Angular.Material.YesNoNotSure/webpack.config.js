@@ -82,7 +82,7 @@ module.exports = () => {
                 test: /\.(ts|js)($|\?)/i // process .js and .ts files only
             }),
 
-            new TimeFixPluign()
+            new TimeFixPlugin()
         ],
 
 

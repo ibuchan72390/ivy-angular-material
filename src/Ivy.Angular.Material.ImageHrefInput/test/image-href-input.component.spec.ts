@@ -77,12 +77,16 @@ describe('MaterialImageHrefInputComponent', () => {
 
     it('getCurrentValue returns the value of the inbox', () => {
 
+        let changeSpy = jasmine.createSpy();
+
+        sut.registerOnChange(changeSpy);
+
         let inputElem = fixture.debugElement.query(By.directive(MatInput));
 
         inputElem.triggerEventHandler('keyup', {});
 
         inputElem.nativeElement.value = 'TESTING';
-
+        
         fixture.detectChanges();
 
         expect(sut.getCurrentValue()).toBe(inputElem.nativeElement.value);

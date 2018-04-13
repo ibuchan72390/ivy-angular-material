@@ -4,6 +4,9 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>Ivy.Angular.Material.HelperDirectives</Name>
     <RootNamespace>Ivy.Angular.Material.HelperDirectives</RootNamespace>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -45,7 +48,24 @@
     <Content Include="test/*.spec.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\Directives\" />
+    <Folder Include="src\Services\" />
     <Folder Include="test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\Directives\mat-list-item-auto-height.directive.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\Services\child-node-helper.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\child-node-helper.service.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\mat-list-item-auto-height.directive.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

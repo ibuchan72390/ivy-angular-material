@@ -4,7 +4,7 @@ export { IvyAngularMaterialHelperDirectivesModule } from './ivy.angular.material
 
 
 // Components
-
+export { MatListItemAutoHeightDirective } from './src/Directives/mat-list-item-auto-height.directive';
 
 
 
@@ -14,7 +14,7 @@ export { IvyAngularMaterialHelperDirectivesModule } from './ivy.angular.material
 
 
 // Services
-
+export { ChildNodeHelperService } from './src/Services/child-node-helper.service';
 
 
 

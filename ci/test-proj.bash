@@ -8,8 +8,6 @@ yarn install
 
 yarn test
 
-cd $OrigLocation
-
-chmod 777 .
+cd $PWD
 
 exit 0;

@@ -10,6 +10,6 @@ yarn test
 
 cd $OrigLocation
 
-chmod 777 ./*
+chmod 777 ./ci/*
 
 exit 0;

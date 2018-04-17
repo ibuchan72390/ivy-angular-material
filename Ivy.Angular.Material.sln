@@ -39,6 +39,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.ImageH
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.HelperDirectives", "src\Ivy.Angular.Material.HelperDirectives\Ivy.Angular.Material.HelperDirectives.njsproj", "{5E19C1B7-B541-44B3-9BC1-FF977569D2A8}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.NotFound", "src\Ivy.Angular.Material.NotFound\Ivy.Angular.Material.NotFound.njsproj", "{A72824EB-F75E-4235-873D-A8160ABB34A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,10 @@ Global
 		{5E19C1B7-B541-44B3-9BC1-FF977569D2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E19C1B7-B541-44B3-9BC1-FF977569D2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E19C1B7-B541-44B3-9BC1-FF977569D2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72824EB-F75E-4235-873D-A8160ABB34A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72824EB-F75E-4235-873D-A8160ABB34A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72824EB-F75E-4235-873D-A8160ABB34A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72824EB-F75E-4235-873D-A8160ABB34A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,6 +126,7 @@ Global
 		{4367E867-0111-4014-8E27-B1255CF9ABB1} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{C6A78257-FA49-4A73-B7E6-4260AAF11471} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 		{5E19C1B7-B541-44B3-9BC1-FF977569D2A8} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
+		{A72824EB-F75E-4235-873D-A8160ABB34A4} = {578E5A6C-786A-4042-8D40-21307EDFC9CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {179B2D41-C7AA-49E0-AE4D-2F5AA4B6D9E7}

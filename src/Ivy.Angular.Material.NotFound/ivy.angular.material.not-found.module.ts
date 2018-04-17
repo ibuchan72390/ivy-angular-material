@@ -3,15 +3,22 @@
 // Angular
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
+import { FlexLayoutModule, FlexFillDirective, LayoutDirective, LayoutAlignDirective } from '@angular/flex-layout';
+import { MatIconModule } from '@angular/material';
+
+import { MaterialNotFoundComponent } from './src/Components/NotFound/not-found.component';
+
 // Service Collection
 let imports: any[] = [
+    FlexLayoutModule,
+    MatIconModule
 ];
 
 let providers: any[] = [
 ];
 
 let declarations: any[] = [
-
+    MaterialNotFoundComponent
 ];
 
 // NgModule

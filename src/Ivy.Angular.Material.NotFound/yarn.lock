@@ -32,6 +32,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/flex-layout@^5.0.0-beta.14":
+  version "5.0.0-beta.14"
+  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-5.0.0-beta.14.tgz#300e1cba2ef1a70f43fe7ea68ea78267cb4241e4"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/forms@^5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.2.10.tgz#6a4cf9c87b57005599c0ec59a79b7f1b06375591"
@@ -779,6 +785,10 @@ caniuse-api@^1.5.2:
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000830"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000830.tgz#6e45255b345649fd15ff59072da1e12bb3de2f13"
+
+case@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/case/-/case-1.5.4.tgz#b201642aae9e374feb5750d1181a76850153830c"
 
 caseless@~0.11.0:
   version "0.11.0"
@@ -2532,6 +2542,18 @@ isobject@^3.0.0, isobject@^3.0.1:
 isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
+
+ivy.angular.test-helpers@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ivy.angular.test-helpers/-/ivy.angular.test-helpers-1.1.1.tgz#b31272bb9a34bcf44c9d5cbaa6fba89c16b1326a"
+  dependencies:
+    "@angular/cdk" "^5.2.4"
+    "@angular/core" "^5.2.10"
+    "@angular/flex-layout" "^5.0.0-beta.14"
+    case "^1.5.4"
+    core-js "^2.5.5"
+    rxjs "^5.5.10"
+    zone.js "^0.8.26"
 
 jasmine-core@^3.1.0, jasmine-core@~3.1.0:
   version "3.1.0"
@@ -4755,6 +4777,10 @@ through2@^2.0.0:
 thunkify@~2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/thunkify/-/thunkify-2.1.2.tgz#faa0e9d230c51acc95ca13a361ac05ca7e04553d"
+
+time-fix-plugin@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/time-fix-plugin/-/time-fix-plugin-2.0.0.tgz#d112f1e415b6ed269e008a42990ddbf8053fc315"
 
 timers-browserify@^1.0.1:
   version "1.4.2"

@@ -4,6 +4,9 @@
 
     <mat-icon color="warn">warning</mat-icon>
 
-    <h3>It appears that the page you're looking for could not be found!</h3>
+    <h3>
+        <span *ngIf="showStandardText()">It appears that the page you're looking for could not be found!</span>
+        <span *ngIf="showTextOverride()">{{textOverride}}</span>
+    </h3>
 
 </div>

@@ -76,4 +76,15 @@ describe('MaterialNotFoundComponent', () => {
 
         expect(h3Elem.innerText).toBe('It appears that the page you\'re looking for could not be found!');
     });
+
+    it('TextOverride is applied instead of heading if the input has been supplied', () => {
+
+        sut.textOverride = 'Test Override';
+
+        fixture.detectChanges();
+
+        let h3Elem = fixture.debugElement.nativeElement.querySelector('h3');
+
+        expect(h3Elem.innerText).toBe(sut.textOverride);
+    });
 });

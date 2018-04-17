@@ -4,7 +4,7 @@ export { IvyAngularMaterialNotFoundModule } from './ivy.angular.material.not-fou
 
 
 // Components
-
+export { MaterialNotFoundComponent } from './src/Components/NotFound/not-found.component';
 
 
 

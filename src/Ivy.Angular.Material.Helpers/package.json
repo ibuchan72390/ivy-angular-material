@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.helpers",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Ivy Material Helpers for @angular/material",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@angular/common": "^5.2.10",
     "@angular/core": "^5.2.10",
-    "ivy.angular.web": "^1.1.0",
+    "ivy.angular.web": "^1.1.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.24"
   },

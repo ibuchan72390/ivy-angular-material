@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@angular/animations@^5.2.10", "@angular/animations@^5.2.9":
+"@angular/animations@^5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-5.2.10.tgz#61718792e0922ac622fd7c6dfb0afbb996638692"
   dependencies:
@@ -26,13 +26,13 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/core@^5.2.10", "@angular/core@^5.2.9":
+"@angular/core@^5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.2.10.tgz#a6eba06cae7267efbd2666e3fa5e42b84c2261de"
   dependencies:
     tslib "^1.7.1"
 
-"@angular/forms@^5.2.10", "@angular/forms@^5.2.9":
+"@angular/forms@^5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.2.10.tgz#6a4cf9c87b57005599c0ec59a79b7f1b06375591"
   dependencies:
@@ -2479,14 +2479,14 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-ivy.angular.material.sized-icon@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ivy.angular.material.sized-icon/-/ivy.angular.material.sized-icon-1.0.0.tgz#9d50156ca51b09bbe125a7028f7eec72f534b265"
+ivy.angular.material.sized-icon@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ivy.angular.material.sized-icon/-/ivy.angular.material.sized-icon-1.1.0.tgz#ef4aa6cba7d95f2c4e2818997e74c56c7089b2f0"
   dependencies:
-    "@angular/animations" "^5.2.9"
+    "@angular/animations" "^5.2.10"
     "@angular/cdk" "^5.2.4"
-    "@angular/core" "^5.2.9"
-    "@angular/forms" "^5.2.9"
+    "@angular/core" "^5.2.10"
+    "@angular/forms" "^5.2.10"
     "@angular/material" "^5.2.4"
     core-js "^2.5.5"
     rxjs "^5.5.8"

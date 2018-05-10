@@ -26,7 +26,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/core@^5.2.10", "@angular/core@^5.2.9":
+"@angular/core@^5.2.10":
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-5.2.10.tgz#a6eba06cae7267efbd2666e3fa5e42b84c2261de"
   dependencies:
@@ -2493,21 +2493,21 @@ ivy.angular.data@1.0.2, ivy.angular.data@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ivy.angular.data/-/ivy.angular.data-1.0.2.tgz#02826d232f03ed335bcc90a3b08ee6b9eb87ec84"
 
-ivy.angular.full-image@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/ivy.angular.full-image/-/ivy.angular.full-image-1.1.0.tgz#aaf727deb73a48d1f0c78b3ed2f3ae907704351e"
+ivy.angular.full-image@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ivy.angular.full-image/-/ivy.angular.full-image-1.1.1.tgz#2c83d1d25b07b9457ce5e927a6f52eb2efa7a8e5"
   dependencies:
     "@angular/common" "^5.2.10"
     "@angular/core" "^5.2.10"
     core-js "^2.5.4"
     ivy.angular.data "^1.0.2"
-    ivy.angular.material.helpers "^1.0.10"
-    ivy.angular.value-helpers "1.0.13"
-    ivy.angular.web "^1.0.11"
+    ivy.angular.material.helpers "^1.1.1"
+    ivy.angular.value-helpers "1.1.0"
+    ivy.angular.web "^1.1.1"
     rxjs "^5.5.8"
     zone.js "^0.8.24"
 
-ivy.angular.material.helpers@^1.0.10, ivy.angular.material.helpers@^1.1.1:
+ivy.angular.material.helpers@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ivy.angular.material.helpers/-/ivy.angular.material.helpers-1.1.1.tgz#997b51f12da0b380013054c3cec112cfd360fbf7"
   dependencies:
@@ -2517,7 +2517,7 @@ ivy.angular.material.helpers@^1.0.10, ivy.angular.material.helpers@^1.1.1:
     rxjs "^5.5.6"
     zone.js "^0.8.24"
 
-ivy.angular.regex-validators@^1.0.0:
+ivy.angular.regex-validators@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ivy.angular.regex-validators/-/ivy.angular.regex-validators-1.1.0.tgz#20c9a0119a1b3dc464af3ee1e4b1096db8d85703"
   dependencies:
@@ -2526,16 +2526,7 @@ ivy.angular.regex-validators@^1.0.0:
     rxjs "^5.5.9"
     zone.js "^0.8.26"
 
-ivy.angular.value-helpers@1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.0.13.tgz#a3f7fb9aa9bff8d3b6ddacff6d08c02913dd9e73"
-  dependencies:
-    "@angular/core" "^5.2.9"
-    ivy.angular.data "1.0.2"
-    rxjs "^5.5.6"
-    zone.js "^0.8.24"
-
-ivy.angular.value-helpers@^1.0.13:
+ivy.angular.value-helpers@1.1.0, ivy.angular.value-helpers@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ivy.angular.value-helpers/-/ivy.angular.value-helpers-1.1.0.tgz#e3200bae9fdd818ceba72c68809350bcefde94c1"
   dependencies:
@@ -2544,7 +2535,7 @@ ivy.angular.value-helpers@^1.0.13:
     rxjs "^5.5.6"
     zone.js "^0.8.24"
 
-ivy.angular.web@^1.0.11, ivy.angular.web@^1.1.1:
+ivy.angular.web@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ivy.angular.web/-/ivy.angular.web-1.1.1.tgz#e1f20eefbb90ab8bd62d5f8c9302862b99840e15"
   dependencies:

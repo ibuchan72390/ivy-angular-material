@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.loading-spinner",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Custom Loading Spinner to work with Angular Material.",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -23,7 +23,7 @@
   "dependencies": {
     "@angular/common": "^5.2.10",
     "@angular/core": "^5.2.10",
-    "@angular/flex-layout": "^5.0.0-beta.13",
+    "@angular/flex-layout": "^5.0.0-beta.14",
     "@angular/material": "^5.2.4",
     "core-js": "^2.5.3",
     "rxjs": "^5.5.7",
@@ -32,7 +32,7 @@
   "peerDependencies": {
     "@angular/common": "^5.0.0",
     "@angular/core": "^5.0.0",
-    "@angular/flex-layout": "^5.0.0",
+    "@angular/flex-layout": "^5.0.0-beta.14",
     "@angular/material": "^5.0.0"
   },
   "devDependencies": {

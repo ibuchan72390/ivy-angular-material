@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.file-uploader",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "File Uploader leveraging the Material Design library",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",

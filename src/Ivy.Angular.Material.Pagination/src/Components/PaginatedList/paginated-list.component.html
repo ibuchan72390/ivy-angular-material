@@ -96,7 +96,7 @@
     <!-- Ensure you leverage your models appropriately -->
     <!-- Eventually abstract to a separate section -->
     <mat-card style="height: 100%;"
-             *ngIf="response != null">
+             *ngIf="response != null && !showNoData()">
         <ng-content></ng-content>
     </mat-card>
 

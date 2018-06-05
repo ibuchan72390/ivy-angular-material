@@ -31,10 +31,12 @@ export class MaterialFileUploaderComponent {
     fileName: string = null;
 
     @Input() fileExtensions: string[] = null;
+    @Input() sizeLimitBytes: number = null;
     @Input() disabled: boolean;
 
     @Output() onFileChange: EventEmitter<any> = new EventEmitter<any>();
     @Output() onExtensionInvalid: EventEmitter<void> = new EventEmitter<void>();
+    @Output() onSizeLimitInvalid: EventEmitter<void> = new EventEmitter<void>();
 
 
 
@@ -42,7 +44,7 @@ export class MaterialFileUploaderComponent {
     // I like to use noImplicitAny, but I can't unless we know what this param model is
     fileChange(file: any): void {
 
-        let newFile: any;
+        let newFile: File;
 
         if (file.dataTransfer) {
             newFile = file.dataTransfer.files[0];
@@ -70,6 +72,16 @@ export class MaterialFileUploaderComponent {
                 return;
             }
 
+        }
+
+        if (this.sizeLimitBytes != null) {
+
+            if (newFile.size > this.sizeLimitBytes) {
+
+                this.onSizeLimitInvalid.emit();
+
+                return;
+            }
         }
 
         this.fileName = fName;

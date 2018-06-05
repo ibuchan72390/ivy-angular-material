@@ -29,7 +29,7 @@ describe('FileUploaderComponent', () => {
 
 
     // Tests
-    it('fileUploaderComponent updates name and emits file if no extensions to validate', () => {
+    it('fileUploaderComponent updates name and emits file if no extensions or size limit to validate', () => {
 
         const fname = 'test';
         const fext = 'txt';
@@ -123,6 +123,82 @@ describe('FileUploaderComponent', () => {
         let errorEmit = false;
         sut.onExtensionInvalid.subscribe(() => errorEmit = true);
         sut.fileExtensions = exts;
+
+        sut.fileChange(event);
+
+        expect(emit).toBe(null);
+        expect(errorEmit).toBe(true);
+
+        fixture.detectChanges();
+
+        expect(sut.fileName).toBe(null);
+    });
+
+    it('fileUploaderComponent updates name and emits file if size limit exists and valid', () => {
+
+        const fname = 'test';
+        const fext = 'txt';
+        const sizeLimit = 1000;
+
+        const filename = fname + '.' + fext;
+
+        let file = {
+            name: filename,
+            size: sizeLimit - 1
+        } as File;
+
+        let event = {
+            target: {
+                files: [
+                    file
+                ]
+            }
+        };
+
+        let emit: any;
+        sut.onFileChange.subscribe(file => emit = file);
+
+        let errorEmit = false;
+        sut.onSizeLimitInvalid.subscribe(() => errorEmit = true);
+        sut.sizeLimitBytes = sizeLimit;
+
+        sut.fileChange(event);
+
+        expect(emit).toBe(file);
+        expect(errorEmit).toBe(false);
+
+        fixture.detectChanges();
+
+        expect(sut.fileName).toBe(filename);
+    });
+
+    it('fileUploaderComponent skips name and does not emit file if size limit exists and invalid', () => {
+
+        const fname = 'test';
+        const fext = 'txt';
+        const sizeLimit = 1000;
+
+        const filename = fname + '.' + fext;
+
+        let file = {
+            name: filename,
+            size: sizeLimit + 1
+        } as File;
+
+        let event = {
+            target: {
+                files: [
+                    file
+                ]
+            }
+        };
+
+        let emit: any = null;
+        sut.onFileChange.subscribe(file => emit = file);
+
+        let errorEmit = false;
+        sut.onSizeLimitInvalid.subscribe(() => errorEmit = true);
+        sut.sizeLimitBytes = sizeLimit;
 
         sut.fileChange(event);
 

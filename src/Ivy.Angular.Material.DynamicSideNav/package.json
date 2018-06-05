@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.dynamic-side-nav",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -20,19 +20,6 @@
     "prepublish": "tsc",
     "test-publish": "tsc && npm link"
   },
-  "dependencies": {
-    "@angular/animations": "^5.2.10",
-    "@angular/cdk": "^5.2.4",
-    "@angular/core": "^5.2.10",
-    "@angular/flex-layout": "^5.0.0-beta.14",
-    "@angular/forms": "^5.2.10",
-    "@angular/material": "^5.2.4",
-    "core-js": "^2.5.5",
-    "ivy.angular.material.helpers": "^1.1.1",
-    "ivy.angular.web": "^1.1.1",
-    "rxjs": "^5.5.9",
-    "zone.js": "^0.8.26"
-  },
   "peerDependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/cdk": "^5.0.0",
@@ -42,15 +29,24 @@
     "@angular/material": "^5.0.0"
   },
   "devDependencies": {
+    "@angular/animations": "^5.2.10",
+    "@angular/cdk": "^5.2.4",
     "@angular/common": "^5.2.10",
     "@angular/compiler": "^5.2.10",
+    "@angular/core": "^5.2.10",
+    "@angular/flex-layout": "^5.0.0-beta.14",
+    "@angular/forms": "^5.2.10",
+    "@angular/material": "^5.2.4",
     "@angular/platform-browser": "^5.2.10",
     "@angular/platform-browser-dynamic": "^5.2.10",
     "@types/jasmine": "^2.8.6",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "5.0.0-1",
+    "core-js": "^2.5.5",
     "css-loader": "^0.28.11",
     "html-loader": "^0.5.5",
+    "ivy.angular.material.helpers": "^1.1.2",
+    "ivy.angular.web": "^1.1.1",
     "jasmine": "^3.1.0",
     "jasmine-core": "^3.1.0",
     "karma": "^2.0.0",
@@ -62,9 +58,11 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^3.0.0",
+    "rxjs": "^5.5.9",
     "time-fix-plugin": "^2.0.0",
     "to-string-loader": "^1.1.5",
     "typescript": "^2.8.1",
-    "webpack": "^4.5.0"
+    "webpack": "^4.5.0",
+    "zone.js": "^0.8.26"
   }
 }

@@ -1,0 +1,48 @@
+{
+  "name": "ivy.angular.material.expanding-title-mat-card",
+  "version": "0.0.0",
+  "description": "Ivy.Angular.Material.ExpandingTitleMatCard",
+  "author": "ibuchan@iamglobaleducation.com",
+  "typings": "./index.d.ts",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibuchan72390/ivy-angular.git"
+  },
+  "scripts": {
+    "test": "karma start ./karma.conf.js",
+    "test:chrome": "karma start --browsers Chrome ./karma.conf.js",
+    "test:firefox": "karma start --browsers Firefox ./karma.conf.js",
+    "test:all": "karma start --browsers Chrome,Firefox,PhantomJS ./karma.conf.js",
+    "test-debug": "karma start --no-single-run ./karma.conf.js",
+    "test-debug:chrome": "karma start --no-single-run --browsers Chrome ./karma.conf.js",
+    "test-debug:firefox": "karma start --no-single-run --browsers Firefox ./karma.conf.js",
+    "prepublish": "tsc",
+    "test-publish": "tsc && npm link"
+  },
+  "peerDependencies": {
+    "@angular/animations": "^5.0.0",
+    "@angular/cdk": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/flex-layout": "^5.0.0-beta.14",
+    "@angular/forms": "^5.0.0",
+    "@angular/material": "^5.0.0"
+  },
+  "dependencies": {
+    "@angular/animations": "^5.2.10",
+    "@angular/cdk": "^5.2.4",
+    "@angular/common": "^5.2.10",
+    "@angular/compiler": "^5.2.10",
+    "@angular/core": "^5.2.10",
+    "@angular/flex-layout": "5.0.0-beta.14",
+    "@angular/forms": "^5.2.10",
+    "@angular/material": "^5.2.4",
+    "@angular/platform-browser": "^5.2.10",
+    "@angular/platform-browser-dynamic": "^5.2.10",
+    "rxjs": "^5.5.0",
+    "time-fix-plugin": "^2.0.0",
+    "typescript": "^2.8.1",
+    "webpack": "^4.5.0",
+    "zone.js": "^0.8.4"
+  }
+}

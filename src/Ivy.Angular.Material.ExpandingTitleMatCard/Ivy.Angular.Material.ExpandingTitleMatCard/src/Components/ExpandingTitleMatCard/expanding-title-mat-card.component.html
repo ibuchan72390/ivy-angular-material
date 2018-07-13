@@ -1,11 +1,22 @@
-﻿<!DOCTYPE html>
+﻿<mat-card style="margin: 12px;">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+    <mat-card-title fxLayoutAlign="space-between center">
+        
+        <span>
+            {{title}}
+        </span>
 
-</body>
-</html>
+        <mat-icon (click)="toggleExpand()" color="accent">
+            {{getIconName()}}
+        </mat-icon>
+
+    </mat-card-title>
+
+    <ivy-collapsible-panel [isCollapsed]="!isExpanded()"
+                           style="overflow: hidden;">
+
+        <ng-content></ng-content>
+
+    </ivy-collapsible-panel>
+
+</mat-card>

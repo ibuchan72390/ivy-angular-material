@@ -51,6 +51,10 @@
     <TypeScriptCompile Include="src\Components\ExpandingTitleMatCard\expanding-title-mat-card.component.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="test\expanding-title-mat-card.component.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\index.ts" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="karma.conf.js" />

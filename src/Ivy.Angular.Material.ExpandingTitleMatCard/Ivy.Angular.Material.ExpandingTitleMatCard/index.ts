@@ -4,7 +4,7 @@ export { IvyAngularMaterialExpandingTitleMatCardModule } from './ivy.angular.mat
 
 
 // Components
-
+export { MaterialExpandingTitleMatCardComponent } from './src/Components/ExpandingTitleMatCard/expanding-title-mat-card.component';
 
 
 // Directives
@@ -13,6 +13,7 @@ export { IvyAngularMaterialExpandingTitleMatCardModule } from './ivy.angular.mat
 
 
 // Services
+
 
 
 

@@ -1,15 +1,32 @@
 ﻿declare var require: any;
 
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'ivy-material-dynamic-side-nav',
-    templateUrl: './dynamic-side-nav.component.html',
-    styleUrls: [
-        './dynamic-side-nav.component.css'
-    ]
+    selector: 'ivy-expanding-title-mat-card',
+    templateUrl: './expanding-title-mat-card.component.html'
 })
 export class MaterialExpandingTitleMatCardComponent {
 
-    
+    @Input()
+    title: string;
+
+    private collapsed: boolean = true;
+
+
+    getIconName(): string {
+        if (this.collapsed) {
+            return 'arrow_drop_down';
+        } else {
+            return 'arrow_drop_up';
+        }
+    }
+
+    toggleExpand(): void {
+        this.collapsed = !this.collapsed;
+    }
+
+    isExpanded(): boolean {
+        return !this.collapsed;
+    }
 }

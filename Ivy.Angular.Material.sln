@@ -41,7 +41,7 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.Helper
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.NotFound", "src\Ivy.Angular.Material.NotFound\Ivy.Angular.Material.NotFound.njsproj", "{A72824EB-F75E-4235-873D-A8160ABB34A4}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.ExpandingTitleMatCard", "src\Ivy.Angular.Material.ExpandingTitleMatCard\Ivy.Angular.Material.ExpandingTitleMatCard\Ivy.Angular.Material.ExpandingTitleMatCard.njsproj", "{CD4A57E8-ED7B-4CEB-A35D-77395C99F5B3}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Ivy.Angular.Material.ExpandingTitleMatCard", "src\Ivy.Angular.Material.ExpandingTitleMatCard\Ivy.Angular.Material.ExpandingTitleMatCard.njsproj", "{CD4A57E8-ED7B-4CEB-A35D-77395C99F5B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

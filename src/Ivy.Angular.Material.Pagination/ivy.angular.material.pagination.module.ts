@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 // Angular
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,9 +13,15 @@ import { IvyAngularMaterialLoadingSpinnerModule } from 'ivy.angular.material.loa
 // Components
 import { MaterialPaginatedListComponent } from './src/Components/PaginatedList/paginated-list.component';
 
-// Service Collection
+import { PaginationHelperService } from './src/Services/pagination-helper.service';
+
+
 let declarations: any[] = [
     MaterialPaginatedListComponent
+];
+
+let providers: any[] = [
+    PaginationHelperService
 ];
 
 
@@ -39,7 +45,16 @@ let declarations: any[] = [
         IvyAngularMaterialLoadingSpinnerModule
     ],
     declarations: declarations,
-    exports: declarations
+    exports: declarations,
+    providers: providers
 })
 export class IvyAngularMaterialPaginationModule {
+
+    static forRoot(): ModuleWithProviders {
+
+        return {
+            ngModule: IvyAngularMaterialPaginationModule,
+            providers: providers
+        }
+    }
 }

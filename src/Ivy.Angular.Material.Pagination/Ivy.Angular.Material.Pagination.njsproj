@@ -43,6 +43,7 @@
   <ItemGroup>
     <Folder Include="src\Components\" />
     <Folder Include="src\Components\PaginatedList\" />
+    <Folder Include="src\Services\" />
     <Folder Include="test\" />
     <Folder Include="src\" />
   </ItemGroup>
@@ -54,10 +55,16 @@
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="src\Components\PaginatedList\paginated-list.component.ts" />
+    <TypeScriptCompile Include="src\Services\pagination-helper.service.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="test\index.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="test\paginated-list.component.spec.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test\pagination-helper.service.spec.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>

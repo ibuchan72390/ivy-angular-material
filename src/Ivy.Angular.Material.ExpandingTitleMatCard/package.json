@@ -1,6 +1,6 @@
 {
   "name": "ivy.angular.material.expanding-title-mat-card",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Ivy.Angular.Material.ExpandingTitleMatCard",
   "author": "ibuchan@iamglobaleducation.com",
   "typings": "./index.d.ts",
@@ -21,9 +21,9 @@
     "test-publish": "tsc && npm link"
   },
   "peerDependencies": {
-    "@angular/cdk": "^5.0.0",
+    "@angular/cdk": "^6.0.0",
     "@angular/cli": "^6.2.1",
-    "@angular/flex-layout": "^5.0.0-beta.14",
+    "@angular/flex-layout": "^6.0.0-beta.18",
     "ivy.angular.animation-helpers": "^2.0.0"
   },
   "dependencies": {},

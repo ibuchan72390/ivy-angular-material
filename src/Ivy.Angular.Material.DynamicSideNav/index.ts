@@ -14,7 +14,7 @@ export { MaterialDynamicSideNavComponent } from './src/Components/DynamicSideNav
 
 
 // Services
-
+export { DynamicSideNavService } from './src/Services/dynamic-side-nav.service';
 
 
 // Pipes

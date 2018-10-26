@@ -1,11 +1,13 @@
 ﻿import 'jasmine';
 
+import { By } from '@angular/platform-browser';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { IvyAngularMaterialPaginationModule } from '../ivy.angular.material.pagination.module';
 
 import { PaginatedRequest, BasePaginatedResponse } from 'ivy.angular.data';
+import { LoadingSpinnerComponent } from 'ivy.angular.material.loading-spinner';
 
 import { MaterialPaginatedListComponent } from '../src/Components/PaginatedList/paginated-list.component';
 
@@ -23,7 +25,7 @@ describe('MaterialPaginatedListComponent', () => {
         TestBed.configureTestingModule({
             imports: [
                 IvyAngularMaterialPaginationModule,
-                BrowserAnimationsModule
+                NoopAnimationsModule
             ]
         });
 
@@ -54,25 +56,27 @@ describe('MaterialPaginatedListComponent', () => {
 
         fixture.detectChanges();
 
-        let progSpinner = fixture.debugElement.nativeElement.querySelector('ivy-loading-spinner');
+        let progSpinner = fixture.debugElement.query(By.directive(LoadingSpinnerComponent));
 
-        expect(progSpinner).not.toBe(null);
+        expect(progSpinner.attributes['ng-reflect-is-loading']).toBe('true');
+    });
+
+    it('progressSpinner is not visible while response != null', () => {
 
         sut.response = new BasePaginatedResponse();
 
+        // Init clears the response via ngOnInit
         fixture.detectChanges();
 
-        progSpinner = fixture.debugElement.nativeElement.querySelector('ivy-loading-spinner');
+        // Need to reassign the response at this point as if we got it back from the API
+        sut.response = new BasePaginatedResponse();
 
-        expect(progSpinner).toBe(null);
-
-        sut.response = null;
-
+        // Second execution updates the loadingSpinner off the screen
         fixture.detectChanges();
 
-        progSpinner = fixture.debugElement.nativeElement.querySelector('ivy-loading-spinner');
+        let progSpinner = fixture.debugElement.query(By.directive(LoadingSpinnerComponent));
 
-        expect(progSpinner).not.toBe(null);
+        expect(progSpinner.attributes['ng-reflect-is-loading']).toBe('false');
     });
 
 

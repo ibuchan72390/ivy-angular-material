@@ -100,8 +100,7 @@
         <ng-content></ng-content>
     </mat-card>
 
-    <ivy-loading-spinner *ngIf="response == null"
-                         [isLoading]="true">
+    <ivy-loading-spinner [isLoading]="response == null">
     </ivy-loading-spinner>
 
 </div>
